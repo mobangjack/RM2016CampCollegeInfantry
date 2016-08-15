@@ -14,7 +14,9 @@
 .\objects\controltask.o: ..\lib\stm32f4xx_exti.h
 .\objects\controltask.o: ..\lib\stm32f4xx_flash.h
 .\objects\controltask.o: ..\lib\stm32f4xx_gpio.h
+.\objects\controltask.o: ..\lib\stm32f4xx_i2c.h
 .\objects\controltask.o: ..\lib\stm32f4xx_rcc.h
+.\objects\controltask.o: ..\lib\stm32f4xx_spi.h
 .\objects\controltask.o: ..\lib\stm32f4xx_syscfg.h
 .\objects\controltask.o: ..\lib\stm32f4xx_tim.h
 .\objects\controltask.o: ..\lib\stm32f4xx_usart.h
@@ -44,12 +46,15 @@
 .\objects\controltask.o: ..\bsp\QuadEncoder.h
 .\objects\controltask.o: ..\bsp\timer.h
 .\objects\controltask.o: ..\bsp\usart1.h
+.\objects\controltask.o: ..\bsp\usart2.h
 .\objects\controltask.o: ..\bsp\usart3.h
 .\objects\controltask.o: ..\bsp\zgyro.h
 .\objects\controltask.o: ..\imu\imu.h
 .\objects\controltask.o: ..\imu\mpu6050_driver.h
 .\objects\controltask.o: ..\imu\mpu6050_i2c.h
 .\objects\controltask.o: ..\imu\mpu6050_interrupt.h
+.\objects\controltask.o: ..\bsp\spi1.h
+.\objects\controltask.o: ..\nrf\NRF24L01.h
 .\objects\controltask.o: ..\app\Can1Task.h
 .\objects\controltask.o: ..\app\Can2Task.h
 .\objects\controltask.o: ..\app\InputTask.h

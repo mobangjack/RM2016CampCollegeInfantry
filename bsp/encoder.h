@@ -31,17 +31,16 @@ typedef struct Encoder
 	int32_t diff;
 	uint16_t bias;
 	int32_t round;
-	int32_t scale;
 	float angle;
-	float radian;
+	float rad;
 	int32_t rate_raw;
 	int32_t rate_buf[ENCODER_RATE_BUF_SIZE];
 	uint8_t rate_cnt;
 	uint8_t rate_ptr;
 	int32_t rate_sum;
 	int32_t rate;
-	float rate_angle;
-	float rate_radian;
+	float angle_rate;
+	float rad_rate;
 	uint32_t cnt;
 }Encoder;
 

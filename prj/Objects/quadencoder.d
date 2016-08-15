@@ -14,7 +14,9 @@
 .\objects\quadencoder.o: ..\lib\stm32f4xx_exti.h
 .\objects\quadencoder.o: ..\lib\stm32f4xx_flash.h
 .\objects\quadencoder.o: ..\lib\stm32f4xx_gpio.h
+.\objects\quadencoder.o: ..\lib\stm32f4xx_i2c.h
 .\objects\quadencoder.o: ..\lib\stm32f4xx_rcc.h
+.\objects\quadencoder.o: ..\lib\stm32f4xx_spi.h
 .\objects\quadencoder.o: ..\lib\stm32f4xx_syscfg.h
 .\objects\quadencoder.o: ..\lib\stm32f4xx_tim.h
 .\objects\quadencoder.o: ..\lib\stm32f4xx_usart.h
@@ -44,12 +46,15 @@
 .\objects\quadencoder.o: ..\bsp\QuadEncoder.h
 .\objects\quadencoder.o: ..\bsp\timer.h
 .\objects\quadencoder.o: ..\bsp\usart1.h
+.\objects\quadencoder.o: ..\bsp\usart2.h
 .\objects\quadencoder.o: ..\bsp\usart3.h
 .\objects\quadencoder.o: ..\bsp\zgyro.h
 .\objects\quadencoder.o: ..\imu\imu.h
 .\objects\quadencoder.o: ..\imu\mpu6050_driver.h
 .\objects\quadencoder.o: ..\imu\mpu6050_i2c.h
 .\objects\quadencoder.o: ..\imu\mpu6050_interrupt.h
+.\objects\quadencoder.o: ..\bsp\spi1.h
+.\objects\quadencoder.o: ..\nrf\NRF24L01.h
 .\objects\quadencoder.o: ..\app\Can1Task.h
 .\objects\quadencoder.o: ..\app\Can2Task.h
 .\objects\quadencoder.o: ..\app\InputTask.h

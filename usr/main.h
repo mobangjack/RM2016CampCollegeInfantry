@@ -48,6 +48,7 @@
 #include "QuadEncoder.h"
 #include "timer.h"
 #include "usart1.h"
+#include "usart2.h"
 #include "usart3.h"
 #include "zgyro.h"
 
@@ -56,6 +57,10 @@
 #include "mpu6050_driver.h"
 #include "mpu6050_i2c.h"
 #include "mpu6050_interrupt.h"
+
+//nrf
+#include "spi1.h"
+#include "NRF24L01.h"
 
 //app
 #include "Can1Task.h"

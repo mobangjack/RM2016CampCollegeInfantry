@@ -32,7 +32,7 @@ int main(void)
 	Init_Quaternion();
 	while(1)
 	{
-		IMU_getYawPitchRoll(angle);
+		//IMU_getYawPitchRoll(angle);
 		if(Micros() % 10000 == 0)
 		{
 			
@@ -41,12 +41,17 @@ int main(void)
 		}
 		if(Micros() % 20000 == 0)
 		{
-			DebugIMU();
+			//DebugIMU();
+		}
+		if(Micros() % 30000 == 0)
+		{
+			//USART2_PrintString("usart2 bluetooth\n");
+			//USART3_PrintString("usart3 wired serial\n");
 		}
 		if(Micros() % 1000000 == 0)
 		{
 			t++;
-			printf("%d\n",t);
+			//printf("%d\n",t);
 		}
     }
 }

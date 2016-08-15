@@ -14,7 +14,9 @@
 .\objects\delay.o: ..\lib\stm32f4xx_exti.h
 .\objects\delay.o: ..\lib\stm32f4xx_flash.h
 .\objects\delay.o: ..\lib\stm32f4xx_gpio.h
+.\objects\delay.o: ..\lib\stm32f4xx_i2c.h
 .\objects\delay.o: ..\lib\stm32f4xx_rcc.h
+.\objects\delay.o: ..\lib\stm32f4xx_spi.h
 .\objects\delay.o: ..\lib\stm32f4xx_syscfg.h
 .\objects\delay.o: ..\lib\stm32f4xx_tim.h
 .\objects\delay.o: ..\lib\stm32f4xx_usart.h
@@ -44,12 +46,15 @@
 .\objects\delay.o: ..\bsp\QuadEncoder.h
 .\objects\delay.o: ..\bsp\timer.h
 .\objects\delay.o: ..\bsp\usart1.h
+.\objects\delay.o: ..\bsp\usart2.h
 .\objects\delay.o: ..\bsp\usart3.h
 .\objects\delay.o: ..\bsp\zgyro.h
 .\objects\delay.o: ..\imu\imu.h
 .\objects\delay.o: ..\imu\mpu6050_driver.h
 .\objects\delay.o: ..\imu\mpu6050_i2c.h
 .\objects\delay.o: ..\imu\mpu6050_interrupt.h
+.\objects\delay.o: ..\bsp\spi1.h
+.\objects\delay.o: ..\nrf\NRF24L01.h
 .\objects\delay.o: ..\app\Can1Task.h
 .\objects\delay.o: ..\app\Can2Task.h
 .\objects\delay.o: ..\app\InputTask.h

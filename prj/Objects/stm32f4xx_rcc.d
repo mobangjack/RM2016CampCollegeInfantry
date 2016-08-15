@@ -14,7 +14,9 @@
 .\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_exti.h
 .\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_flash.h
 .\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_gpio.h
+.\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_i2c.h
 .\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_rcc.h
+.\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_spi.h
 .\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_syscfg.h
 .\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_tim.h
 .\objects\stm32f4xx_rcc.o: ..\lib\stm32f4xx_usart.h

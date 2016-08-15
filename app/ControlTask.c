@@ -82,10 +82,10 @@ void WorkingStateSM(void)
 void ChassisPositionControl(void)
 {
 	/* Mecanum Position Synthesis */
-	mecanumPosition.w1 = CM1Encoder.radian;
-	mecanumPosition.w2 = CM2Encoder.radian;
-	mecanumPosition.w3 = CM3Encoder.radian;
-	mecanumPosition.w4 = CM4Encoder.radian;
+	mecanumPosition.w1 = CM1Encoder.rad;
+	mecanumPosition.w2 = CM2Encoder.rad;
+	mecanumPosition.w3 = CM3Encoder.rad;
+	mecanumPosition.w4 = CM4Encoder.rad;
 	
 	Mecanum_Synthesis(&mecanumPosition);
 	
@@ -109,10 +109,10 @@ void ChassisPositionControl(void)
 void ChassisSpeedControl(void)
 {
 	/* Mecanum Speed Synthesis */
-	mecanumSpeed.w1 = CM1Encoder.rate_radian;
-	mecanumSpeed.w2 = CM2Encoder.rate_radian;
-	mecanumSpeed.w3 = CM3Encoder.rate_radian;
-	mecanumSpeed.w4 = CM4Encoder.rate_radian;
+	mecanumSpeed.w1 = CM1Encoder.rad_rate;
+	mecanumSpeed.w2 = CM2Encoder.rad_rate;
+	mecanumSpeed.w3 = CM3Encoder.rad_rate;
+	mecanumSpeed.w4 = CM4Encoder.rad_rate;
 	
 	Mecanum_Synthesis(&mecanumSpeed);
 	

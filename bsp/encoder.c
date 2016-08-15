@@ -18,10 +18,10 @@
 
 void Encoder_Process(Encoder* encoder, uint16_t value)
 {
-	static const uint32_t encoder_mod = ENCODER_VAL_MAX + 1;
-	static const float encoder_value_to_angle_coeff = 0.0439453125f;
-	static const float angle_to_radian_coeff = 0.01745329252f;
-	
+	static const uint32_t ecd_mod = ENCODER_VAL_MAX + 1;
+	static const float ecd_to_angle_coeff = 360.f/(float)ecd_mod;
+	static const float angle_to_rad_coeff = PI/180.f;
+	static const float ecd_to_rad_coeff = ecd_to_angle_coeff*angle_to_rad_coeff;
 	if(encoder->cnt < ENCODER_INIT_FRAME_COUNT)
 	{
 		encoder->bias = value;
@@ -32,21 +32,20 @@ void Encoder_Process(Encoder* encoder, uint16_t value)
 	encoder->diff = encoder->value - encoder->last_value;
 	if(encoder->diff > ENCODER_DIFF_MAX)
 	{
-		encoder->rate_raw = encoder->diff - encoder_mod;
+		encoder->rate_raw = encoder->diff - ecd_mod;
 		encoder->round--;
 	}
 	else if(encoder->diff < -ENCODER_DIFF_MAX)
 	{
-		encoder->rate_raw = encoder->diff + encoder_mod;
+		encoder->rate_raw = encoder->diff + ecd_mod;
 		encoder->round++;
 	}
 	else
 	{
 		encoder->rate_raw = encoder->diff;
 	}
-	encoder->scale = (encoder->value - encoder->bias) + encoder->round * encoder_mod;
-	encoder->angle = encoder->scale * encoder_value_to_angle_coeff;
-	encoder->radian = encoder->angle * angle_to_radian_coeff;
+	encoder->angle = (encoder->value - encoder->bias) * ecd_to_angle_coeff + encoder->round * 360;
+	encoder->rad = (encoder->value - encoder->bias) * ecd_to_rad_coeff + encoder->round * 2 * PI;
 	if(encoder->rate_cnt < ENCODER_RATE_BUF_SIZE)
 	{
 		encoder->rate_buf[encoder->rate_ptr++] = encoder->rate_raw;
@@ -63,8 +62,8 @@ void Encoder_Process(Encoder* encoder, uint16_t value)
 		encoder->rate_buf[encoder->rate_ptr++] = encoder->rate_raw;
 	}
 	encoder->rate = encoder->rate_sum / encoder->rate_cnt;
-	encoder->rate_angle = encoder->rate * 43.9453125f;
-	encoder->rate_radian = encoder->rate_angle * angle_to_radian_coeff;
+	encoder->angle_rate = encoder->rate * 1000 * ecd_to_angle_coeff;
+	encoder->rad_rate = encoder->angle_rate * angle_to_rad_coeff;
 }
 
 uint8_t Encoder_IsOk(Encoder* encoder)

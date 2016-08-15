@@ -14,7 +14,9 @@
 .\objects\led.o: ..\lib\stm32f4xx_exti.h
 .\objects\led.o: ..\lib\stm32f4xx_flash.h
 .\objects\led.o: ..\lib\stm32f4xx_gpio.h
+.\objects\led.o: ..\lib\stm32f4xx_i2c.h
 .\objects\led.o: ..\lib\stm32f4xx_rcc.h
+.\objects\led.o: ..\lib\stm32f4xx_spi.h
 .\objects\led.o: ..\lib\stm32f4xx_syscfg.h
 .\objects\led.o: ..\lib\stm32f4xx_tim.h
 .\objects\led.o: ..\lib\stm32f4xx_usart.h
@@ -44,12 +46,15 @@
 .\objects\led.o: ..\bsp\QuadEncoder.h
 .\objects\led.o: ..\bsp\timer.h
 .\objects\led.o: ..\bsp\usart1.h
+.\objects\led.o: ..\bsp\usart2.h
 .\objects\led.o: ..\bsp\usart3.h
 .\objects\led.o: ..\bsp\zgyro.h
 .\objects\led.o: ..\imu\imu.h
 .\objects\led.o: ..\imu\mpu6050_driver.h
 .\objects\led.o: ..\imu\mpu6050_i2c.h
 .\objects\led.o: ..\imu\mpu6050_interrupt.h
+.\objects\led.o: ..\bsp\spi1.h
+.\objects\led.o: ..\nrf\NRF24L01.h
 .\objects\led.o: ..\app\Can1Task.h
 .\objects\led.o: ..\app\Can2Task.h
 .\objects\led.o: ..\app\InputTask.h

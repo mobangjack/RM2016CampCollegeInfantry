@@ -14,7 +14,9 @@
 .\objects\bsp.o: ..\lib\stm32f4xx_exti.h
 .\objects\bsp.o: ..\lib\stm32f4xx_flash.h
 .\objects\bsp.o: ..\lib\stm32f4xx_gpio.h
+.\objects\bsp.o: ..\lib\stm32f4xx_i2c.h
 .\objects\bsp.o: ..\lib\stm32f4xx_rcc.h
+.\objects\bsp.o: ..\lib\stm32f4xx_spi.h
 .\objects\bsp.o: ..\lib\stm32f4xx_syscfg.h
 .\objects\bsp.o: ..\lib\stm32f4xx_tim.h
 .\objects\bsp.o: ..\lib\stm32f4xx_usart.h
@@ -44,12 +46,15 @@
 .\objects\bsp.o: ..\bsp\QuadEncoder.h
 .\objects\bsp.o: ..\bsp\timer.h
 .\objects\bsp.o: ..\bsp\usart1.h
+.\objects\bsp.o: ..\bsp\usart2.h
 .\objects\bsp.o: ..\bsp\usart3.h
 .\objects\bsp.o: ..\bsp\zgyro.h
 .\objects\bsp.o: ..\imu\imu.h
 .\objects\bsp.o: ..\imu\mpu6050_driver.h
 .\objects\bsp.o: ..\imu\mpu6050_i2c.h
 .\objects\bsp.o: ..\imu\mpu6050_interrupt.h
+.\objects\bsp.o: ..\bsp\spi1.h
+.\objects\bsp.o: ..\nrf\NRF24L01.h
 .\objects\bsp.o: ..\app\Can1Task.h
 .\objects\bsp.o: ..\app\Can2Task.h
 .\objects\bsp.o: ..\app\InputTask.h

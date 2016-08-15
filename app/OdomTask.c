@@ -20,33 +20,15 @@ Odom odom;
 
 void OdomTask(void)
 {
-	Mecanum mecanum;
-	
-	/* Velocity Synthesis */
-	mecanum.w1 = CM1Encoder.rate_radian;
-	mecanum.w2 = CM2Encoder.rate_radian;
-	mecanum.w3 = CM3Encoder.rate_radian;
-	mecanum.w4 = CM4Encoder.rate_radian;
-	
-	Mecanum_Synthesis(&mecanum);
-	
-	odom.vx = mecanum.x * 1000;
-	odom.vy = mecanum.y * 1000;
-	odom.vz = mecanum.z * 1000;
-	
-	/* Position Synthesis */
-	mecanum.w1 = CM1Encoder.radian;
-	mecanum.w2 = CM2Encoder.radian;
-	mecanum.w3 = CM3Encoder.radian;
-	mecanum.w4 = CM4Encoder.radian;
-	
-	Mecanum_Synthesis(&mecanum);
-	
-	odom.px = mecanum.x * 1000;
-	odom.py = mecanum.y * 1000;
-	odom.pz = mecanum.z * 1000;
-	
 	odom.header = ODOM_HEADER;
+	
+	odom.px = mecanumPosition.x * 1000;
+	odom.py = mecanumPosition.y * 1000;
+	odom.pz = mecanumPosition.z * 1000;
+	
+	odom.vx = mecanumSpeed.x * 1000;
+	odom.vy = mecanumSpeed.y * 1000;
+	odom.vz = mecanumSpeed.z * 1000;
 	
 	CRC16Append((uint8_t*)&odom, sizeof(Odom), ODOM_INIT_CRC16);
 	USART3_PrintBlock((uint8_t*)&odom, sizeof(Odom));

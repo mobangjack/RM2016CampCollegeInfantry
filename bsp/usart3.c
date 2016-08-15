@@ -57,7 +57,10 @@ void USART3_Config(void)
     nvic.NVIC_IRQChannelCmd = ENABLE; 
     NVIC_Init(&nvic);
 
-	usart3_tx_fifo = FIFO_Create(USART3_TX_FIFO_SIZE);
+	if(usart3_tx_fifo == NULL)
+	{
+		usart3_tx_fifo = FIFO_Create(USART3_TX_FIFO_SIZE);
+	}
 }
 
 
@@ -65,6 +68,22 @@ void USART3_Print(uint8_t ch)
 {    
     FIFO_Push(usart3_tx_fifo, ch);
     USART_ITConfig(USART3, USART_IT_TXE, ENABLE);
+}
+
+void USART3_PrintString(const char* str)
+{
+	/*
+	while(*str != '\0')
+	{
+		FIFO_Push(usart3_tx_fifo, *str++);
+	}
+	*/
+	uint32_t i = 0;
+	for(i = 0; i < strlen(str); i++)
+	{
+		FIFO_Push(usart3_tx_fifo, str[i]);
+	}
+	USART_ITConfig(USART3, USART_IT_TXE, ENABLE);
 }
 
 void USART3_PrintBlock(uint8_t* pdata, uint8_t len)

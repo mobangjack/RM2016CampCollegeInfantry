@@ -14,7 +14,9 @@
 .\objects\odomtask.o: ..\lib\stm32f4xx_exti.h
 .\objects\odomtask.o: ..\lib\stm32f4xx_flash.h
 .\objects\odomtask.o: ..\lib\stm32f4xx_gpio.h
+.\objects\odomtask.o: ..\lib\stm32f4xx_i2c.h
 .\objects\odomtask.o: ..\lib\stm32f4xx_rcc.h
+.\objects\odomtask.o: ..\lib\stm32f4xx_spi.h
 .\objects\odomtask.o: ..\lib\stm32f4xx_syscfg.h
 .\objects\odomtask.o: ..\lib\stm32f4xx_tim.h
 .\objects\odomtask.o: ..\lib\stm32f4xx_usart.h
@@ -44,12 +46,15 @@
 .\objects\odomtask.o: ..\bsp\QuadEncoder.h
 .\objects\odomtask.o: ..\bsp\timer.h
 .\objects\odomtask.o: ..\bsp\usart1.h
+.\objects\odomtask.o: ..\bsp\usart2.h
 .\objects\odomtask.o: ..\bsp\usart3.h
 .\objects\odomtask.o: ..\bsp\zgyro.h
 .\objects\odomtask.o: ..\imu\imu.h
 .\objects\odomtask.o: ..\imu\mpu6050_driver.h
 .\objects\odomtask.o: ..\imu\mpu6050_i2c.h
 .\objects\odomtask.o: ..\imu\mpu6050_interrupt.h
+.\objects\odomtask.o: ..\bsp\spi1.h
+.\objects\odomtask.o: ..\nrf\NRF24L01.h
 .\objects\odomtask.o: ..\app\Can1Task.h
 .\objects\odomtask.o: ..\app\Can2Task.h
 .\objects\odomtask.o: ..\app\InputTask.h

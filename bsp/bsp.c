@@ -27,6 +27,7 @@ void BSP_Config(void)
 	CAN1_Config();           
 	CAN2_Config(); 
 	USART1_Config();
+	USART2_Config();
 	USART3_Config();
 	//QuadEncoder_Config();    //Collided with PWM_Config();
 	TIM6_Start();

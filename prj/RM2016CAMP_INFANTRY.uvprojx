@@ -373,7 +373,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\app;..\bsp;..\dep;..\imu;..\lib;..\usr;..\alg\crc;..\alg\fifo;..\alg\mafilter;..\alg\pid;..\alg\ramp;..\alg\mecanum;..\alg\sprotocol</IncludePath>
+              <IncludePath>..\app;..\bsp;..\dep;..\imu;..\lib;..\nrf;..\usr;..\alg\crc;..\alg\fifo;..\alg\mafilter;..\alg\pid;..\alg\ramp;..\alg\mecanum;..\alg\sprotocol</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -562,6 +562,11 @@
               <FilePath>..\bsp\QuadEncoder.c</FilePath>
             </File>
             <File>
+              <FileName>spi1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\spi1.c</FilePath>
+            </File>
+            <File>
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\timer.c</FilePath>
@@ -572,6 +577,11 @@
               <FilePath>..\bsp\usart1.c</FilePath>
             </File>
             <File>
+              <FileName>usart2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\usart2.c</FilePath>
+            </File>
+            <File>
               <FileName>usart3.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\usart3.c</FilePath>
@@ -580,6 +590,31 @@
               <FileName>zgyro.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\zgyro.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>imu</GroupName>
+          <Files>
+            <File>
+              <FileName>imu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\imu\imu.c</FilePath>
+            </File>
+            <File>
+              <FileName>mpu6050_driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\imu\mpu6050_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>mpu6050_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\imu\mpu6050_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>mpu6050_interrupt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\imu\mpu6050_interrupt.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -602,6 +637,11 @@
               <FilePath>..\lib\stm32f4xx_dma.c</FilePath>
             </File>
             <File>
+              <FileName>stm32f4xx_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\stm32f4xx_exti.c</FilePath>
+            </File>
+            <File>
               <FileName>stm32f4xx_flash.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lib\stm32f4xx_flash.c</FilePath>
@@ -612,9 +652,19 @@
               <FilePath>..\lib\stm32f4xx_gpio.c</FilePath>
             </File>
             <File>
+              <FileName>stm32f4xx_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\stm32f4xx_i2c.c</FilePath>
+            </File>
+            <File>
               <FileName>stm32f4xx_rcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lib\stm32f4xx_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\stm32f4xx_spi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_syscfg.c</FileName>
@@ -640,6 +690,16 @@
               <FileName>startup_stm32f4xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\lib\startup_stm32f4xx.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>nrf</GroupName>
+          <Files>
+            <File>
+              <FileName>NRF24L01.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\nrf\NRF24L01.c</FilePath>
             </File>
           </Files>
         </Group>

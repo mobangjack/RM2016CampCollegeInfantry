@@ -14,7 +14,9 @@
 .\objects\zgyro.o: ..\lib\stm32f4xx_exti.h
 .\objects\zgyro.o: ..\lib\stm32f4xx_flash.h
 .\objects\zgyro.o: ..\lib\stm32f4xx_gpio.h
+.\objects\zgyro.o: ..\lib\stm32f4xx_i2c.h
 .\objects\zgyro.o: ..\lib\stm32f4xx_rcc.h
+.\objects\zgyro.o: ..\lib\stm32f4xx_spi.h
 .\objects\zgyro.o: ..\lib\stm32f4xx_syscfg.h
 .\objects\zgyro.o: ..\lib\stm32f4xx_tim.h
 .\objects\zgyro.o: ..\lib\stm32f4xx_usart.h
@@ -44,12 +46,15 @@
 .\objects\zgyro.o: ..\bsp\QuadEncoder.h
 .\objects\zgyro.o: ..\bsp\timer.h
 .\objects\zgyro.o: ..\bsp\usart1.h
+.\objects\zgyro.o: ..\bsp\usart2.h
 .\objects\zgyro.o: ..\bsp\usart3.h
 .\objects\zgyro.o: ..\bsp\zgyro.h
 .\objects\zgyro.o: ..\imu\imu.h
 .\objects\zgyro.o: ..\imu\mpu6050_driver.h
 .\objects\zgyro.o: ..\imu\mpu6050_i2c.h
 .\objects\zgyro.o: ..\imu\mpu6050_interrupt.h
+.\objects\zgyro.o: ..\bsp\spi1.h
+.\objects\zgyro.o: ..\nrf\NRF24L01.h
 .\objects\zgyro.o: ..\app\Can1Task.h
 .\objects\zgyro.o: ..\app\Can2Task.h
 .\objects\zgyro.o: ..\app\InputTask.h

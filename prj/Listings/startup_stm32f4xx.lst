@@ -860,7 +860,7 @@ erwork --depend=.\objects\startup_stm32f4xx.d -o.\objects\startup_stm32f4xx.o -
 IG:\RM2016\RM2016CampCollegeInfantry\prj\RTE -ID:\Keil_v5\ARM\PACK\Keil\STM32F4
 xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include -ID:\Keil_v5\ARM\CMSIS\I
 nclude --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 517"
- --predefine="STM32F407xx SETA 1" --list=.\listings\startup_stm32f4xx.lst ..\li
+ --predefine="STM32F405xx SETA 1" --list=.\listings\startup_stm32f4xx.lst ..\li
 b\startup_stm32f4xx.s
 
 
