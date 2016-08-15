@@ -59,4 +59,5 @@
 .\objects\zgyro.o: ..\app\Can2Task.h
 .\objects\zgyro.o: ..\app\InputTask.h
 .\objects\zgyro.o: ..\app\ControlTask.h
+.\objects\zgyro.o: ..\nrf\NRFTask.h
 .\objects\zgyro.o: ..\app\OdomTask.h

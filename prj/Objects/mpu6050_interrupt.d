@@ -59,4 +59,5 @@
 .\objects\mpu6050_interrupt.o: ..\app\Can2Task.h
 .\objects\mpu6050_interrupt.o: ..\app\InputTask.h
 .\objects\mpu6050_interrupt.o: ..\app\ControlTask.h
+.\objects\mpu6050_interrupt.o: ..\nrf\NRFTask.h
 .\objects\mpu6050_interrupt.o: ..\app\OdomTask.h

@@ -23,15 +23,27 @@ void DebugIMU(void)
 
 int main(void)
 {
-	uint32_t t = 0;
+	uint32_t tick = 0;
 	BSP_Config();
 	delay_ms(500);
 	MPU6050_Initialize();
 	MPU6050_IntConfiguration();     
 	MPU6050_EnableInt();
 	Init_Quaternion();
+	NRF24L01_Init();
+	while(NRF24L01_Check())
+	{
+		tick++;
+		if(tick > 2000)
+		{
+			printf("NRF24L01 check failed!\n");
+			break;
+		}
+	}
+	RX_Mode();
 	while(1)
 	{
+		NRFTask();
 		//IMU_getYawPitchRoll(angle);
 		if(Micros() % 10000 == 0)
 		{
@@ -50,7 +62,7 @@ int main(void)
 		}
 		if(Micros() % 1000000 == 0)
 		{
-			t++;
+			tick++;
 			//printf("%d\n",t);
 		}
     }

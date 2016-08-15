@@ -59,4 +59,5 @@
 .\objects\quadencoder.o: ..\app\Can2Task.h
 .\objects\quadencoder.o: ..\app\InputTask.h
 .\objects\quadencoder.o: ..\app\ControlTask.h
+.\objects\quadencoder.o: ..\nrf\NRFTask.h
 .\objects\quadencoder.o: ..\app\OdomTask.h

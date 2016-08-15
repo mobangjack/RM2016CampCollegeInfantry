@@ -59,4 +59,5 @@
 .\objects\mpu6050_i2c.o: ..\app\Can2Task.h
 .\objects\mpu6050_i2c.o: ..\app\InputTask.h
 .\objects\mpu6050_i2c.o: ..\app\ControlTask.h
+.\objects\mpu6050_i2c.o: ..\nrf\NRFTask.h
 .\objects\mpu6050_i2c.o: ..\app\OdomTask.h

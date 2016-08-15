@@ -59,4 +59,5 @@
 .\objects\led.o: ..\app\Can2Task.h
 .\objects\led.o: ..\app\InputTask.h
 .\objects\led.o: ..\app\ControlTask.h
+.\objects\led.o: ..\nrf\NRFTask.h
 .\objects\led.o: ..\app\OdomTask.h

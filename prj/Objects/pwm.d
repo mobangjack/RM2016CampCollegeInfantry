@@ -59,4 +59,5 @@
 .\objects\pwm.o: ..\app\Can2Task.h
 .\objects\pwm.o: ..\app\InputTask.h
 .\objects\pwm.o: ..\app\ControlTask.h
+.\objects\pwm.o: ..\nrf\NRFTask.h
 .\objects\pwm.o: ..\app\OdomTask.h

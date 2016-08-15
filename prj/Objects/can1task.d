@@ -59,4 +59,5 @@
 .\objects\can1task.o: ..\app\Can2Task.h
 .\objects\can1task.o: ..\app\InputTask.h
 .\objects\can1task.o: ..\app\ControlTask.h
+.\objects\can1task.o: ..\nrf\NRFTask.h
 .\objects\can1task.o: ..\app\OdomTask.h

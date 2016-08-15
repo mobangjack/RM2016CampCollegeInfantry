@@ -59,4 +59,5 @@
 .\objects\usart1.o: ..\app\Can2Task.h
 .\objects\usart1.o: ..\app\InputTask.h
 .\objects\usart1.o: ..\app\ControlTask.h
+.\objects\usart1.o: ..\nrf\NRFTask.h
 .\objects\usart1.o: ..\app\OdomTask.h

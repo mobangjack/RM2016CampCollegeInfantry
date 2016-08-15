@@ -59,4 +59,5 @@
 .\objects\mpu6050_driver.o: ..\app\Can2Task.h
 .\objects\mpu6050_driver.o: ..\app\InputTask.h
 .\objects\mpu6050_driver.o: ..\app\ControlTask.h
+.\objects\mpu6050_driver.o: ..\nrf\NRFTask.h
 .\objects\mpu6050_driver.o: ..\app\OdomTask.h

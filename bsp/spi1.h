@@ -4,7 +4,7 @@
 #include "stm32f4xx.h"
 
 #define RCC_SPI1_CLK                RCC_APB2Periph_SPI1
-#define SPI1_GPIO_PORT              GPIOB
+#define SPI1_GPIO_PORT              GPIOA
 #define RCC_SPI1                    RCC_AHB1Periph_GPIOA
 #define SPI1_SCK                    GPIO_Pin_5
 #define SPI1_MISO                   GPIO_Pin_6

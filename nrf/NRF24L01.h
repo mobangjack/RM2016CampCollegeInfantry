@@ -48,9 +48,6 @@
 #define FIFO_STATUS     0x17  //FIFO状态寄存器;bit0,RX FIFO寄存器空标志;bit1,RX FIFO满标志;bit2,3,保留
                               //bit4,TX FIFO空标志;bit5,TX FIFO满标志;bit6,1,循环发送上一数据包.0,不循环;
 /**********************************************************************************************************/
-#define TP_SPI_CE      GPIO_Pin_15
-#define GPIO_TP_CE  GPIOG
-#define RCC_TP_CE  RCC_AHB1Periph_GPIOG
 
 //NRF24L01控制操作
 #define NRF24L01_CE      GPIO_Pin_0
@@ -78,7 +75,7 @@
 #define RESET_NRF24L01_IRQ()   GPIO_ResetBits(GPIO_NRF24L01_IRQ,NRF24L01_IRQ)
 #define SET_NRF24L01_IRQ       GPIO_SetBits(GPIO_NRF24L01_IRQ,NRF24L01_IRQ)
 
-#define READ_NRF24L01_IRQ         (GPIO_ReadInputDataBit(GPIO_NRF24L01_IRQ,NRF24L01_IRQ))
+#define READ_NRF24L01_IRQ()    GPIO_ReadInputDataBit(GPIO_NRF24L01_IRQ,NRF24L01_IRQ)
 
 //NRF24L01发送接收数据宽度定义
 #define TX_ADR_WIDTH    5                               //5字节的地址宽度

@@ -59,4 +59,5 @@
 .\objects\encoder.o: ..\app\Can2Task.h
 .\objects\encoder.o: ..\app\InputTask.h
 .\objects\encoder.o: ..\app\ControlTask.h
+.\objects\encoder.o: ..\nrf\NRFTask.h
 .\objects\encoder.o: ..\app\OdomTask.h

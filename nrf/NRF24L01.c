@@ -26,7 +26,7 @@ void NRF24L01_Init(void)
     GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_UP;
 	GPIO_Init(GPIO_NRF24L01_CSN, &GPIO_InitStructure);
 	
-	SET_NRF24L01_CE();                                           //初始化时先拉高
+	SET_NRF24L01_CE();                                    //初始化时先拉高
     SET_NRF24L01_CSN();                                   //初始化时先拉高
 
     //配置NRF2401的IRQ
@@ -40,17 +40,8 @@ void NRF24L01_Init(void)
 	SPI1_Init();                                       //初始化SPI
 	RESET_NRF24L01_CE(); 	                               //使能24L01
 	SET_NRF24L01_CSN();                                  //SPI片选取消
-
-    //关闭同一组SPI管脚的其他SPI设备
-	RCC_AHB1PeriphClockCmd(RCC_TP_CE, ENABLE);           //使能GPIO的时钟
-    GPIO_InitStructure.GPIO_Pin = TP_SPI_CE;              //NRF24L01 模块片选信号
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;           //推挽输出
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
-    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-    GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_UP;
-	GPIO_Init(GPIO_TP_CE, &GPIO_InitStructure);
-    GPIO_SetBits(GPIO_TP_CE,TP_SPI_CE);
 }
+
 //上电检测NRF24L01是否在位
 //写5个数据然后再读回来进行比较，相同时返回值:0，表示在位;否则返回1，表示不在位	
 u8 NRF24L01_Check(void)
@@ -63,11 +54,12 @@ u8 NRF24L01_Check(void)
 	for(i=0;i<5;i++)
 	{
 	    if(buf1[i] != 0XA5)
-		{	//printf("%X ",buf1[i]);
+		{	
+			printf("%X ",buf1[i]);
 		    break;					   
 		}
 	}
-	if(i!=5)return 1;                               //NRF24L01不在位	
+	if(i != 5) return 1;                               //NRF24L01不在位	
 	return 0;		                                //NRF24L01在位
 }	 	 
 //通过SPI写寄存器
@@ -80,6 +72,7 @@ u8 NRF24L01_WriteReg(u8 regaddr,u8 data)
   	SET_NRF24L01_CSN();                    //禁止SPI传输	   
   	return(status);       		         //返回状态值
 }
+
 //读取SPI寄存器值 ，regaddr:要读的寄存器
 u8 NRF24L01_ReadReg(u8 regaddr)
 {
@@ -90,6 +83,7 @@ u8 NRF24L01_ReadReg(u8 regaddr)
   	SET_NRF24L01_CSN();                //禁止SPI传输		    
   	return(reg_val);                 //返回状态值
 }	
+
 //在指定位置读出指定长度的数据
 //*pBuf:数据指针
 //返回值,此次读到的状态寄存器值 
@@ -102,6 +96,7 @@ u8 NRF24L01_ReadBuf(u8 regaddr,u8 *pBuf,u8 datalen)
   	SET_NRF24L01_CSN();                     //关闭SPI传输
   	return status;                        //返回读到的状态值
 }
+
 //在指定位置写指定长度的数据
 //*pBuf:数据指针
 //返回值,此次读到的状态寄存器值
@@ -113,18 +108,19 @@ u8 NRF24L01_WriteBuf(u8 regaddr, u8 *pBuf, u8 datalen)
   	for(u8_ctr=0; u8_ctr<datalen; u8_ctr++)SPI1_ReadWriteByte(*pBuf++); //写入数据	 
   	SET_NRF24L01_CSN();                                    //关闭SPI传输
   	return status;                                       //返回读到的状态值
-}				   
+}	
+
 //启动NRF24L01发送一次数据
 //txbuf:待发送数据首地址
 //返回值:发送完成状况
-u8 NRF24L01_TxPacket(u8 *txbuf)
+u8 NRF24L01_Tx(u8 *txbuf)
 {
 	u8 state;   
     u32 timeout = 0; 
 	RESET_NRF24L01_CE();
   	NRF24L01_WriteBuf(WR_TX_PLOAD,txbuf,TX_PLOAD_WIDTH);//写数据到TX BUF  32个字节
  	SET_NRF24L01_CE();                                     //启动发送	   
-	while(READ_NRF24L01_IRQ!=0){timeout++; if(timeout >3000) break;};                              //等待发送完成
+	while(READ_NRF24L01_IRQ()!=0){timeout++; if(timeout >3000) break;};                              //等待发送完成
 	state=NRF24L01_ReadReg(STATUS);                     //读取状态寄存器的值	   
 	NRF24L01_WriteReg(SPI_WRITE_REG+STATUS,state);      //清除TX_DS或MAX_RT中断标志
 	if(state&MAX_TX)                                     //达到最大重发次数
@@ -138,10 +134,11 @@ u8 NRF24L01_TxPacket(u8 *txbuf)
 	}
 	return 0xff;                                         //其他原因发送失败
 }
+
 //启动NRF24L01发送一次数据
 //txbuf:待发送数据首地址
 //返回值:0，接收完成；其他，错误代码
-u8 NRF24L01_RxPacket(u8 *rxbuf)
+u8 NRF24L01_Rx(u8 *rxbuf)
 {
 	u8 state;		    							      
 	state=NRF24L01_ReadReg(STATUS);                //读取状态寄存器的值    	 

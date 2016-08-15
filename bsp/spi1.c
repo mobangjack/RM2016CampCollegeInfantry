@@ -11,7 +11,7 @@ void SPI1_Init(void)
   RCC_AHB1PeriphClockCmd(RCC_SPI1, ENABLE);
 
   /*!< SPI Periph clock enable */
-  RCC_APB1PeriphClockCmd(RCC_SPI1_CLK, ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_SPI1_CLK, ENABLE);
 
   GPIO_PinAFConfig(SPI1_GPIO_PORT, SPI1_SCK_SOURCE, GPIO_AF_SPI1);
   GPIO_PinAFConfig(SPI1_GPIO_PORT, SPI1_MISO_SOURCE, GPIO_AF_SPI1);

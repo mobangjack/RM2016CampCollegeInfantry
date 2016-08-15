@@ -59,4 +59,5 @@
 .\objects\motor.o: ..\app\Can2Task.h
 .\objects\motor.o: ..\app\InputTask.h
 .\objects\motor.o: ..\app\ControlTask.h
+.\objects\motor.o: ..\nrf\NRFTask.h
 .\objects\motor.o: ..\app\OdomTask.h

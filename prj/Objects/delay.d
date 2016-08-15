@@ -59,4 +59,5 @@
 .\objects\delay.o: ..\app\Can2Task.h
 .\objects\delay.o: ..\app\InputTask.h
 .\objects\delay.o: ..\app\ControlTask.h
+.\objects\delay.o: ..\nrf\NRFTask.h
 .\objects\delay.o: ..\app\OdomTask.h

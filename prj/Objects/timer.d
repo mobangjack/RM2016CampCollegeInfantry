@@ -59,4 +59,5 @@
 .\objects\timer.o: ..\app\Can2Task.h
 .\objects\timer.o: ..\app\InputTask.h
 .\objects\timer.o: ..\app\ControlTask.h
+.\objects\timer.o: ..\nrf\NRFTask.h
 .\objects\timer.o: ..\app\OdomTask.h

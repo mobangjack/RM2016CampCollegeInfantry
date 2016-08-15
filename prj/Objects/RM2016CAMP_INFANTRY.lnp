@@ -51,6 +51,7 @@
 ".\objects\system_stm32f4xx.o"
 ".\objects\startup_stm32f4xx.o"
 ".\objects\nrf24l01.o"
+".\objects\nrftask.o"
 ".\objects\main.o"
 --library_type=microlib --strict --scatter ".\Objects\RM2016CAMP_INFANTRY.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols

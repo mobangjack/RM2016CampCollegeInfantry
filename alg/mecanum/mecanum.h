@@ -28,10 +28,13 @@
 /*                                         */
 /*******************************************/
 
-#define MECANUM_A 0.160f  //Mecanum wheel span
-#define MECANUM_B 0.160f  //Mecanum wheel base
+//#define MECANUM_A 0.160f  //Mecanum wheel span
+//#define MECANUM_B 0.160f  //Mecanum wheel base
 //#define MECANUM_L 0.226f  //MECANUM_L = SQRT(A^2+B^2)
-#define MECANUM_L 0.3272f   //MECANUM_L = SQRT(A^2+B^2) -> Modified value, to correct Z axis data
+//#define MECANUM_L 0.3272f   //MECANUM_L = SQRT(A^2+B^2) -> Modified value, to correct Z axis data
+#define MECANUM_A 0.38f  //Mecanum wheel span
+#define MECANUM_B 0.38f  //Mecanum wheel base
+#define MECANUM_L 0.5374f
 #define MECANUM_R 0.076f  //Mecanum wheel radius
 
 typedef struct

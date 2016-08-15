@@ -67,6 +67,7 @@
 #include "Can2Task.h"
 #include "InputTask.h"
 #include "ControlTask.h"
+#include "NRFTask.h"
 #include "OdomTask.h"
 
 //common definition
