@@ -51,6 +51,12 @@
 #include "usart3.h"
 #include "zgyro.h"
 
+//imu
+#include "imu.h"
+#include "mpu6050_driver.h"
+#include "mpu6050_i2c.h"
+#include "mpu6050_interrupt.h"
+
 //app
 #include "Can1Task.h"
 #include "Can2Task.h"

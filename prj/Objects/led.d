@@ -46,6 +46,10 @@
 .\objects\led.o: ..\bsp\usart1.h
 .\objects\led.o: ..\bsp\usart3.h
 .\objects\led.o: ..\bsp\zgyro.h
+.\objects\led.o: ..\imu\imu.h
+.\objects\led.o: ..\imu\mpu6050_driver.h
+.\objects\led.o: ..\imu\mpu6050_i2c.h
+.\objects\led.o: ..\imu\mpu6050_interrupt.h
 .\objects\led.o: ..\app\Can1Task.h
 .\objects\led.o: ..\app\Can2Task.h
 .\objects\led.o: ..\app\InputTask.h

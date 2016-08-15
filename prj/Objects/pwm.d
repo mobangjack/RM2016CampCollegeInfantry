@@ -46,6 +46,10 @@
 .\objects\pwm.o: ..\bsp\usart1.h
 .\objects\pwm.o: ..\bsp\usart3.h
 .\objects\pwm.o: ..\bsp\zgyro.h
+.\objects\pwm.o: ..\imu\imu.h
+.\objects\pwm.o: ..\imu\mpu6050_driver.h
+.\objects\pwm.o: ..\imu\mpu6050_i2c.h
+.\objects\pwm.o: ..\imu\mpu6050_interrupt.h
 .\objects\pwm.o: ..\app\Can1Task.h
 .\objects\pwm.o: ..\app\Can2Task.h
 .\objects\pwm.o: ..\app\InputTask.h

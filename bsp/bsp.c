@@ -30,6 +30,7 @@ void BSP_Config(void)
 	USART3_Config();
 	//QuadEncoder_Config();    //Collided with PWM_Config();
 	TIM6_Start();
-	LED_GREEN_ON();
+	//LED_GREEN_ON();
+	LED_ON();
 }
 

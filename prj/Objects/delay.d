@@ -46,6 +46,10 @@
 .\objects\delay.o: ..\bsp\usart1.h
 .\objects\delay.o: ..\bsp\usart3.h
 .\objects\delay.o: ..\bsp\zgyro.h
+.\objects\delay.o: ..\imu\imu.h
+.\objects\delay.o: ..\imu\mpu6050_driver.h
+.\objects\delay.o: ..\imu\mpu6050_i2c.h
+.\objects\delay.o: ..\imu\mpu6050_interrupt.h
 .\objects\delay.o: ..\app\Can1Task.h
 .\objects\delay.o: ..\app\Can2Task.h
 .\objects\delay.o: ..\app\InputTask.h

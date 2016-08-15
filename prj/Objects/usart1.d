@@ -46,6 +46,10 @@
 .\objects\usart1.o: ..\bsp\usart1.h
 .\objects\usart1.o: ..\bsp\usart3.h
 .\objects\usart1.o: ..\bsp\zgyro.h
+.\objects\usart1.o: ..\imu\imu.h
+.\objects\usart1.o: ..\imu\mpu6050_driver.h
+.\objects\usart1.o: ..\imu\mpu6050_i2c.h
+.\objects\usart1.o: ..\imu\mpu6050_interrupt.h
 .\objects\usart1.o: ..\app\Can1Task.h
 .\objects\usart1.o: ..\app\Can2Task.h
 .\objects\usart1.o: ..\app\InputTask.h

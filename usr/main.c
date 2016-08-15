@@ -16,15 +16,37 @@
  
 #include "main.h"
 
+void DebugIMU(void)
+{
+	printf("ax=%f,ay=%f,az=%f,gx=%f,gy=%f,gz=%f\n", MPU6050_Real_Data.Accel_X, MPU6050_Real_Data.Accel_Y, MPU6050_Real_Data.Accel_Z, MPU6050_Real_Data.Gyro_X, MPU6050_Real_Data.Gyro_Y, MPU6050_Real_Data.Gyro_Z);
+}
+
 int main(void)
 {
+	uint32_t t = 0;
 	BSP_Config();
+	delay_ms(500);
+	MPU6050_Initialize();
+	MPU6050_IntConfiguration();     
+	MPU6050_EnableInt();
+	Init_Quaternion();
 	while(1)
 	{
+		IMU_getYawPitchRoll(angle);
 		if(Micros() % 10000 == 0)
 		{
-			OdomTask();
+			
+			//OdomTask();
 			//printf("%f\n",ZGyroAngle);
+		}
+		if(Micros() % 20000 == 0)
+		{
+			DebugIMU();
+		}
+		if(Micros() % 1000000 == 0)
+		{
+			t++;
+			printf("%d\n",t);
 		}
     }
 }

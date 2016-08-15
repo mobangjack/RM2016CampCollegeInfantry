@@ -46,6 +46,10 @@
 .\objects\encoder.o: ..\bsp\usart1.h
 .\objects\encoder.o: ..\bsp\usart3.h
 .\objects\encoder.o: ..\bsp\zgyro.h
+.\objects\encoder.o: ..\imu\imu.h
+.\objects\encoder.o: ..\imu\mpu6050_driver.h
+.\objects\encoder.o: ..\imu\mpu6050_i2c.h
+.\objects\encoder.o: ..\imu\mpu6050_interrupt.h
 .\objects\encoder.o: ..\app\Can1Task.h
 .\objects\encoder.o: ..\app\Can2Task.h
 .\objects\encoder.o: ..\app\InputTask.h

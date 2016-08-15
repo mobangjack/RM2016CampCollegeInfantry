@@ -46,6 +46,10 @@
 .\objects\quadencoder.o: ..\bsp\usart1.h
 .\objects\quadencoder.o: ..\bsp\usart3.h
 .\objects\quadencoder.o: ..\bsp\zgyro.h
+.\objects\quadencoder.o: ..\imu\imu.h
+.\objects\quadencoder.o: ..\imu\mpu6050_driver.h
+.\objects\quadencoder.o: ..\imu\mpu6050_i2c.h
+.\objects\quadencoder.o: ..\imu\mpu6050_interrupt.h
 .\objects\quadencoder.o: ..\app\Can1Task.h
 .\objects\quadencoder.o: ..\app\Can2Task.h
 .\objects\quadencoder.o: ..\app\InputTask.h

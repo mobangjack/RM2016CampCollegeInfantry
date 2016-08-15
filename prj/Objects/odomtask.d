@@ -46,6 +46,10 @@
 .\objects\odomtask.o: ..\bsp\usart1.h
 .\objects\odomtask.o: ..\bsp\usart3.h
 .\objects\odomtask.o: ..\bsp\zgyro.h
+.\objects\odomtask.o: ..\imu\imu.h
+.\objects\odomtask.o: ..\imu\mpu6050_driver.h
+.\objects\odomtask.o: ..\imu\mpu6050_i2c.h
+.\objects\odomtask.o: ..\imu\mpu6050_interrupt.h
 .\objects\odomtask.o: ..\app\Can1Task.h
 .\objects\odomtask.o: ..\app\Can2Task.h
 .\objects\odomtask.o: ..\app\InputTask.h

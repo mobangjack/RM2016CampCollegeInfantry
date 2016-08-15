@@ -46,6 +46,10 @@
 .\objects\timer.o: ..\bsp\usart1.h
 .\objects\timer.o: ..\bsp\usart3.h
 .\objects\timer.o: ..\bsp\zgyro.h
+.\objects\timer.o: ..\imu\imu.h
+.\objects\timer.o: ..\imu\mpu6050_driver.h
+.\objects\timer.o: ..\imu\mpu6050_i2c.h
+.\objects\timer.o: ..\imu\mpu6050_interrupt.h
 .\objects\timer.o: ..\app\Can1Task.h
 .\objects\timer.o: ..\app\Can2Task.h
 .\objects\timer.o: ..\app\InputTask.h
