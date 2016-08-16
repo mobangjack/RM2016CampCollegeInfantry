@@ -542,6 +542,11 @@
               <FilePath>..\bsp\can2.c</FilePath>
             </File>
             <File>
+              <FileName>chip.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\chip.c</FilePath>
+            </File>
+            <File>
               <FileName>dbus.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\dbus.c</FilePath>

@@ -39,6 +39,7 @@
 #include "bsp.h"
 #include "can1.h"
 #include "can2.h"
+#include "chip.h"
 #include "dbus.h"
 #include "delay.h"
 #include "encoder.h"
