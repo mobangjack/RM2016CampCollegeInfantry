@@ -26,7 +26,6 @@
 .\objects\wireless.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\wireless.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\wireless.o: ..\alg\pid\pid.h
-.\objects\wireless.o: ..\alg\pwm\pwm.h
 .\objects\wireless.o: ..\alg\ramp\ramp.h
 .\objects\wireless.o: ..\alg\fifo\fifo.h
 .\objects\wireless.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,11 +37,13 @@
 .\objects\wireless.o: ..\bsp\bsp.h
 .\objects\wireless.o: ..\bsp\can1.h
 .\objects\wireless.o: ..\bsp\can2.h
+.\objects\wireless.o: ..\bsp\chip.h
 .\objects\wireless.o: ..\bsp\dbus.h
 .\objects\wireless.o: ..\bsp\delay.h
 .\objects\wireless.o: ..\bsp\encoder.h
 .\objects\wireless.o: ..\bsp\led.h
 .\objects\wireless.o: ..\bsp\motor.h
+.\objects\wireless.o: ..\bsp\pwm.h
 .\objects\wireless.o: ..\bsp\QuadEncoder.h
 .\objects\wireless.o: ..\bsp\spi1.h
 .\objects\wireless.o: ..\bsp\timer.h
@@ -60,5 +61,4 @@
 .\objects\wireless.o: ..\app\Controller.h
 .\objects\wireless.o: ..\app\InputScaner.h
 .\objects\wireless.o: ..\app\Odometry.h
-.\objects\wireless.o: ..\app\Servo.h
 .\objects\wireless.o: ..\app\Wireless.h

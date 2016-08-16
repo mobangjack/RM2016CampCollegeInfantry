@@ -26,7 +26,6 @@
 
 //alg
 #include "pid.h"
-#include "pwm.h"
 #include "ramp.h"
 #include "fifo.h"
 #include "crc16.h"
@@ -45,6 +44,7 @@
 #include "encoder.h"
 #include "led.h"
 #include "motor.h"
+#include "pwm.h"
 #include "QuadEncoder.h"
 #include "spi1.h"
 #include "timer.h"
@@ -68,7 +68,6 @@
 #include "Controller.h"
 #include "InputScaner.h"
 #include "Odometry.h"
-#include "Servo.h"
 #include "Wireless.h"
 
 //common definition

@@ -14,8 +14,8 @@
  * limitations under the License.
  */
  
-#ifndef __INPUT_TASK_H__
-#define __INPUT_TASK_H__
+#ifndef __INPUT_SCANER_H__
+#define __INPUT_SCANER_H__
 
 #include <stdint.h>
 

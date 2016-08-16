@@ -26,7 +26,6 @@
 .\objects\mpu6050_i2c.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\mpu6050_i2c.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\mpu6050_i2c.o: ..\alg\pid\pid.h
-.\objects\mpu6050_i2c.o: ..\alg\pwm\pwm.h
 .\objects\mpu6050_i2c.o: ..\alg\ramp\ramp.h
 .\objects\mpu6050_i2c.o: ..\alg\fifo\fifo.h
 .\objects\mpu6050_i2c.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,11 +37,13 @@
 .\objects\mpu6050_i2c.o: ..\bsp\bsp.h
 .\objects\mpu6050_i2c.o: ..\bsp\can1.h
 .\objects\mpu6050_i2c.o: ..\bsp\can2.h
+.\objects\mpu6050_i2c.o: ..\bsp\chip.h
 .\objects\mpu6050_i2c.o: ..\bsp\dbus.h
 .\objects\mpu6050_i2c.o: ..\bsp\delay.h
 .\objects\mpu6050_i2c.o: ..\bsp\encoder.h
 .\objects\mpu6050_i2c.o: ..\bsp\led.h
 .\objects\mpu6050_i2c.o: ..\bsp\motor.h
+.\objects\mpu6050_i2c.o: ..\bsp\pwm.h
 .\objects\mpu6050_i2c.o: ..\bsp\QuadEncoder.h
 .\objects\mpu6050_i2c.o: ..\bsp\spi1.h
 .\objects\mpu6050_i2c.o: ..\bsp\timer.h
@@ -60,5 +61,4 @@
 .\objects\mpu6050_i2c.o: ..\app\Controller.h
 .\objects\mpu6050_i2c.o: ..\app\InputScaner.h
 .\objects\mpu6050_i2c.o: ..\app\Odometry.h
-.\objects\mpu6050_i2c.o: ..\app\Servo.h
 .\objects\mpu6050_i2c.o: ..\app\Wireless.h

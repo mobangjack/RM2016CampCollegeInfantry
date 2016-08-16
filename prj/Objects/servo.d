@@ -38,6 +38,7 @@
 .\objects\servo.o: ..\bsp\bsp.h
 .\objects\servo.o: ..\bsp\can1.h
 .\objects\servo.o: ..\bsp\can2.h
+.\objects\servo.o: ..\bsp\chip.h
 .\objects\servo.o: ..\bsp\dbus.h
 .\objects\servo.o: ..\bsp\delay.h
 .\objects\servo.o: ..\bsp\encoder.h

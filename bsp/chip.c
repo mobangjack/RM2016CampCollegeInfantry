@@ -1,14 +1,34 @@
 #include "chip.h"
 
-void GPIO_Config(GPIO_TypeDef* gpiox, u32 pin, GPIOMode_TypeDef mode, GPIOSpeed_TypeDef speed, GPIOOType_TypeDef otype, GPIOPuPd_TypeDef pupd)
+void GPIO_Config(GPIO gpio, GPIOMode_TypeDef mode, GPIOSpeed_TypeDef speed, GPIOOType_TypeDef otype, GPIOPuPd_TypeDef pupd)
 {
-	GPIO_InitTypeDef gpio;
-	gpio.GPIO_Pin = pin;
-	gpio.GPIO_Mode = mode;
-	gpio.GPIO_Speed = speed;
-	gpio.GPIO_OType = otype;
-	gpio.GPIO_PuPd = pupd;
-	GPIO_Init(gpiox, &gpio);
+	GPIO_InitTypeDef io;
+	
+	if(gpio.grp == GPIOA)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+	if(gpio.grp == GPIOB)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+	if(gpio.grp == GPIOC)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+	if(gpio.grp == GPIOD)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+	if(gpio.grp == GPIOE)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOE, ENABLE);
+	if(gpio.grp == GPIOF)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOF, ENABLE);
+	if(gpio.grp == GPIOG)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
+	if(gpio.grp == GPIOH)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOH, ENABLE);
+	if(gpio.grp == GPIOI)
+		RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOI, ENABLE);
+	
+	io.GPIO_Pin = gpio.pin;
+	io.GPIO_Mode = mode;
+	io.GPIO_Speed = speed;
+	io.GPIO_OType = otype;
+	io.GPIO_PuPd = pupd;
+	GPIO_Init(gpio.grp, &io);
 }
 
 void TIM_Config(TIM_TypeDef* timx, u16 prescaler, u16 counter_mode, u32 period, u16 clock_division, u8 repetition_counter)

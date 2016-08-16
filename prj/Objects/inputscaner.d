@@ -26,7 +26,6 @@
 .\objects\inputscaner.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\inputscaner.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\inputscaner.o: ..\alg\pid\pid.h
-.\objects\inputscaner.o: ..\alg\pwm\pwm.h
 .\objects\inputscaner.o: ..\alg\ramp\ramp.h
 .\objects\inputscaner.o: ..\alg\fifo\fifo.h
 .\objects\inputscaner.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,11 +37,13 @@
 .\objects\inputscaner.o: ..\bsp\bsp.h
 .\objects\inputscaner.o: ..\bsp\can1.h
 .\objects\inputscaner.o: ..\bsp\can2.h
+.\objects\inputscaner.o: ..\bsp\chip.h
 .\objects\inputscaner.o: ..\bsp\dbus.h
 .\objects\inputscaner.o: ..\bsp\delay.h
 .\objects\inputscaner.o: ..\bsp\encoder.h
 .\objects\inputscaner.o: ..\bsp\led.h
 .\objects\inputscaner.o: ..\bsp\motor.h
+.\objects\inputscaner.o: ..\bsp\pwm.h
 .\objects\inputscaner.o: ..\bsp\QuadEncoder.h
 .\objects\inputscaner.o: ..\bsp\spi1.h
 .\objects\inputscaner.o: ..\bsp\timer.h
@@ -60,5 +61,4 @@
 .\objects\inputscaner.o: ..\app\Controller.h
 .\objects\inputscaner.o: ..\app\InputScaner.h
 .\objects\inputscaner.o: ..\app\Odometry.h
-.\objects\inputscaner.o: ..\app\Servo.h
 .\objects\inputscaner.o: ..\app\Wireless.h

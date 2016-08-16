@@ -26,7 +26,6 @@
 .\objects\mpu6050_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\mpu6050_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\mpu6050_driver.o: ..\alg\pid\pid.h
-.\objects\mpu6050_driver.o: ..\alg\pwm\pwm.h
 .\objects\mpu6050_driver.o: ..\alg\ramp\ramp.h
 .\objects\mpu6050_driver.o: ..\alg\fifo\fifo.h
 .\objects\mpu6050_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,11 +37,13 @@
 .\objects\mpu6050_driver.o: ..\bsp\bsp.h
 .\objects\mpu6050_driver.o: ..\bsp\can1.h
 .\objects\mpu6050_driver.o: ..\bsp\can2.h
+.\objects\mpu6050_driver.o: ..\bsp\chip.h
 .\objects\mpu6050_driver.o: ..\bsp\dbus.h
 .\objects\mpu6050_driver.o: ..\bsp\delay.h
 .\objects\mpu6050_driver.o: ..\bsp\encoder.h
 .\objects\mpu6050_driver.o: ..\bsp\led.h
 .\objects\mpu6050_driver.o: ..\bsp\motor.h
+.\objects\mpu6050_driver.o: ..\bsp\pwm.h
 .\objects\mpu6050_driver.o: ..\bsp\QuadEncoder.h
 .\objects\mpu6050_driver.o: ..\bsp\spi1.h
 .\objects\mpu6050_driver.o: ..\bsp\timer.h
@@ -60,5 +61,4 @@
 .\objects\mpu6050_driver.o: ..\app\Controller.h
 .\objects\mpu6050_driver.o: ..\app\InputScaner.h
 .\objects\mpu6050_driver.o: ..\app\Odometry.h
-.\objects\mpu6050_driver.o: ..\app\Servo.h
 .\objects\mpu6050_driver.o: ..\app\Wireless.h

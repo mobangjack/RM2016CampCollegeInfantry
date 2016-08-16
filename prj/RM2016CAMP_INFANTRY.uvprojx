@@ -373,7 +373,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\app;..\bsp;..\dep;..\imu;..\lib;..\nrf;..\usr;..\alg\crc;..\alg\fifo;..\alg\mafilter;..\alg\pid;..\alg\pwm;..\alg\ramp;..\alg\mecanum;..\alg\sprotocol</IncludePath>
+              <IncludePath>..\app;..\bsp;..\dep;..\imu;..\lib;..\nrf;..\usr;..\alg\crc;..\alg\fifo;..\alg\mafilter;..\alg\pid;..\alg\ramp;..\alg\mecanum;..\alg\sprotocol</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -476,11 +476,6 @@
               <FileType>1</FileType>
               <FilePath>..\alg\sprotocol\sprotocol.c</FilePath>
             </File>
-            <File>
-              <FileName>pwm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\alg\pwm\pwm.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -510,11 +505,6 @@
               <FileName>Odometry.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\app\Odometry.c</FilePath>
-            </File>
-            <File>
-              <FileName>Servo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\app\Servo.c</FilePath>
             </File>
             <File>
               <FileName>Wireless.c</FileName>
@@ -570,6 +560,11 @@
               <FileName>motor.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\pwm.c</FilePath>
             </File>
             <File>
               <FileName>QuadEncoder.c</FileName>

@@ -21,13 +21,15 @@ void BSP_Config(void)
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	
 	Led_Config();
-	TIM2_Config();
-	TIM6_Config();
-	CAN1_Config();           
-	CAN2_Config(); 
+	PWM_Config();
+	CAN1_Config();        
+	CAN2_Config();
 	USART1_Config();
 	USART2_Config();
 	USART3_Config();
+	TIM2_Config();
+	TIM6_Config();
+	TIM2_Start();
 	TIM6_Start();
 	LED_ON();
 }

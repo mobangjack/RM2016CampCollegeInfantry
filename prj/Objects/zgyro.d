@@ -26,7 +26,6 @@
 .\objects\zgyro.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\zgyro.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\zgyro.o: ..\alg\pid\pid.h
-.\objects\zgyro.o: ..\alg\pwm\pwm.h
 .\objects\zgyro.o: ..\alg\ramp\ramp.h
 .\objects\zgyro.o: ..\alg\fifo\fifo.h
 .\objects\zgyro.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,11 +37,13 @@
 .\objects\zgyro.o: ..\bsp\bsp.h
 .\objects\zgyro.o: ..\bsp\can1.h
 .\objects\zgyro.o: ..\bsp\can2.h
+.\objects\zgyro.o: ..\bsp\chip.h
 .\objects\zgyro.o: ..\bsp\dbus.h
 .\objects\zgyro.o: ..\bsp\delay.h
 .\objects\zgyro.o: ..\bsp\encoder.h
 .\objects\zgyro.o: ..\bsp\led.h
 .\objects\zgyro.o: ..\bsp\motor.h
+.\objects\zgyro.o: ..\bsp\pwm.h
 .\objects\zgyro.o: ..\bsp\QuadEncoder.h
 .\objects\zgyro.o: ..\bsp\spi1.h
 .\objects\zgyro.o: ..\bsp\timer.h
@@ -60,5 +61,4 @@
 .\objects\zgyro.o: ..\app\Controller.h
 .\objects\zgyro.o: ..\app\InputScaner.h
 .\objects\zgyro.o: ..\app\Odometry.h
-.\objects\zgyro.o: ..\app\Servo.h
 .\objects\zgyro.o: ..\app\Wireless.h

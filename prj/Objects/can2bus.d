@@ -26,7 +26,6 @@
 .\objects\can2bus.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\can2bus.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\can2bus.o: ..\alg\pid\pid.h
-.\objects\can2bus.o: ..\alg\pwm\pwm.h
 .\objects\can2bus.o: ..\alg\ramp\ramp.h
 .\objects\can2bus.o: ..\alg\fifo\fifo.h
 .\objects\can2bus.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,11 +37,13 @@
 .\objects\can2bus.o: ..\bsp\bsp.h
 .\objects\can2bus.o: ..\bsp\can1.h
 .\objects\can2bus.o: ..\bsp\can2.h
+.\objects\can2bus.o: ..\bsp\chip.h
 .\objects\can2bus.o: ..\bsp\dbus.h
 .\objects\can2bus.o: ..\bsp\delay.h
 .\objects\can2bus.o: ..\bsp\encoder.h
 .\objects\can2bus.o: ..\bsp\led.h
 .\objects\can2bus.o: ..\bsp\motor.h
+.\objects\can2bus.o: ..\bsp\pwm.h
 .\objects\can2bus.o: ..\bsp\QuadEncoder.h
 .\objects\can2bus.o: ..\bsp\spi1.h
 .\objects\can2bus.o: ..\bsp\timer.h
@@ -60,5 +61,4 @@
 .\objects\can2bus.o: ..\app\Controller.h
 .\objects\can2bus.o: ..\app\InputScaner.h
 .\objects\can2bus.o: ..\app\Odometry.h
-.\objects\can2bus.o: ..\app\Servo.h
 .\objects\can2bus.o: ..\app\Wireless.h

@@ -26,7 +26,6 @@
 .\objects\usart3.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\usart3.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\usart3.o: ..\alg\pid\pid.h
-.\objects\usart3.o: ..\alg\pwm\pwm.h
 .\objects\usart3.o: ..\alg\ramp\ramp.h
 .\objects\usart3.o: ..\alg\fifo\fifo.h
 .\objects\usart3.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,11 +37,13 @@
 .\objects\usart3.o: ..\bsp\bsp.h
 .\objects\usart3.o: ..\bsp\can1.h
 .\objects\usart3.o: ..\bsp\can2.h
+.\objects\usart3.o: ..\bsp\chip.h
 .\objects\usart3.o: ..\bsp\dbus.h
 .\objects\usart3.o: ..\bsp\delay.h
 .\objects\usart3.o: ..\bsp\encoder.h
 .\objects\usart3.o: ..\bsp\led.h
 .\objects\usart3.o: ..\bsp\motor.h
+.\objects\usart3.o: ..\bsp\pwm.h
 .\objects\usart3.o: ..\bsp\QuadEncoder.h
 .\objects\usart3.o: ..\bsp\spi1.h
 .\objects\usart3.o: ..\bsp\timer.h
@@ -60,5 +61,4 @@
 .\objects\usart3.o: ..\app\Controller.h
 .\objects\usart3.o: ..\app\InputScaner.h
 .\objects\usart3.o: ..\app\Odometry.h
-.\objects\usart3.o: ..\app\Servo.h
 .\objects\usart3.o: ..\app\Wireless.h

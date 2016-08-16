@@ -17,11 +17,17 @@
 #ifndef __TIMER_H__
 #define __TIMER_H__
 
-#define Micros() (TIM2->CNT)
+#include <stdint.h>
 
 void TIM6_Config(void);
 void TIM2_Config(void);
 
 void TIM6_Start(void);
+void TIM2_Start(void);
+
+void TIM6_Stop(void);
+void TIM2_Stop(void);
+
+uint32_t Micros(void);
 
 #endif

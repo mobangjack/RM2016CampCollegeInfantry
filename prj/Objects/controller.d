@@ -26,7 +26,6 @@
 .\objects\controller.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\controller.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\controller.o: ..\alg\pid\pid.h
-.\objects\controller.o: ..\alg\pwm\pwm.h
 .\objects\controller.o: ..\alg\ramp\ramp.h
 .\objects\controller.o: ..\alg\fifo\fifo.h
 .\objects\controller.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -38,11 +37,13 @@
 .\objects\controller.o: ..\bsp\bsp.h
 .\objects\controller.o: ..\bsp\can1.h
 .\objects\controller.o: ..\bsp\can2.h
+.\objects\controller.o: ..\bsp\chip.h
 .\objects\controller.o: ..\bsp\dbus.h
 .\objects\controller.o: ..\bsp\delay.h
 .\objects\controller.o: ..\bsp\encoder.h
 .\objects\controller.o: ..\bsp\led.h
 .\objects\controller.o: ..\bsp\motor.h
+.\objects\controller.o: ..\bsp\pwm.h
 .\objects\controller.o: ..\bsp\QuadEncoder.h
 .\objects\controller.o: ..\bsp\spi1.h
 .\objects\controller.o: ..\bsp\timer.h
@@ -60,5 +61,4 @@
 .\objects\controller.o: ..\app\Controller.h
 .\objects\controller.o: ..\app\InputScaner.h
 .\objects\controller.o: ..\app\Odometry.h
-.\objects\controller.o: ..\app\Servo.h
 .\objects\controller.o: ..\app\Wireless.h

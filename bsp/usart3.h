@@ -27,4 +27,6 @@ void USART3_Print(uint8_t ch);
 void USART3_PrintString(const char* str);
 void USART3_PrintBlock(uint8_t* pdata, uint8_t len);
 
+extern uint8_t usart3_rx_data;
+
 #endif

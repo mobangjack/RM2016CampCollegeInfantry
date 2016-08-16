@@ -27,4 +27,6 @@ void USART2_Print(uint8_t ch);
 void USART2_PrintString(const char* str);
 void USART2_PrintBlock(uint8_t* pdata, uint8_t len);
 
+extern uint8_t usart2_rx_data;
+
 #endif

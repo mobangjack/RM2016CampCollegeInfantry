@@ -85,6 +85,7 @@ void USART2_PrintBlock(uint8_t* pdata, uint8_t len)
     USART_ITConfig(USART2, USART_IT_TXE, ENABLE);
 }
 
+uint8_t usart2_rx_data;
 void USART2_IRQHandler(void)
 {  
     if(USART_GetITStatus(USART2, USART_IT_TXE) != RESET)
@@ -102,8 +103,7 @@ void USART2_IRQHandler(void)
     }
 	else if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)
     {
-        uint8_t rx_data = USART_ReceiveData(USART2);
-        USART_SendData(USART3, rx_data);
+        usart2_rx_data = USART_ReceiveData(USART2);
     }       
 }
 
