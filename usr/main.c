@@ -16,9 +16,14 @@
  
 #include "main.h"
 
-void DebugIMU(void)
+void ShowImuData(void)
 {
 	printf("ax=%f,ay=%f,az=%f,gx=%f,gy=%f,gz=%f\n", MPU6050_Real_Data.Accel_X, MPU6050_Real_Data.Accel_Y, MPU6050_Real_Data.Accel_Z, MPU6050_Real_Data.Gyro_X, MPU6050_Real_Data.Gyro_Y, MPU6050_Real_Data.Gyro_Z);
+}
+
+void ShowZGyroData(void)
+{
+	printf("z=%f\n", ZGyroAngle);
 }
 
 int main(void)
@@ -31,7 +36,6 @@ int main(void)
 	MPU6050_EnableInt();
 	Init_Quaternion();
 	NRF24L01_Init();
-	
 	while(NRF24L01_Check())
 	{
 		tick++;
@@ -41,7 +45,10 @@ int main(void)
 			break;
 		}
 	}
-	//RX_Mode();
+	RX_Mode();
+	delay_ms(4000);
+	ZGyro_RST();
+	printf("boot done!\n");
 	tick = 0;
 	while(1)
 	{
@@ -55,17 +62,17 @@ int main(void)
 		}
 		if(Micros() % 20000 == 0)
 		{
-			//DebugIMU();
+			ShowZGyroData();
+			//ShowImuData();
 		}
 		if(Micros() % 30000 == 0)
 		{
-			//USART2_PrintString("usart2 bluetooth\n");
-			//USART3_PrintString("usart3 wired serial\n");
+			
 		}
-		if(Micros() % 1000000 == 0)		
+		if(Micros() % 1000000 == 0)
 		{
 			tick++;
-			printf("%d\n",tick);
+			//printf("%d\n",tick);
 		}
     }
 }

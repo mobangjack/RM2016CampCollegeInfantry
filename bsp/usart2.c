@@ -30,17 +30,17 @@ void USART2_Config(void)
     RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2,ENABLE);
 
-    GPIO_PinAFConfig(GPIOA,GPIO_PinSource1,GPIO_AF_USART2);
-    GPIO_PinAFConfig(GPIOA,GPIO_PinSource2,GPIO_AF_USART2); 
+    GPIO_PinAFConfig(GPIOA,GPIO_PinSource2,GPIO_AF_USART2);
+    GPIO_PinAFConfig(GPIOA,GPIO_PinSource3,GPIO_AF_USART2); 
 
-    gpio.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_2;
+    gpio.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
     gpio.GPIO_Mode = GPIO_Mode_AF;
     gpio.GPIO_OType = GPIO_OType_PP;
     gpio.GPIO_Speed = GPIO_Speed_100MHz;
     gpio.GPIO_PuPd = GPIO_PuPd_NOPULL;
     GPIO_Init(GPIOA,&gpio);
 
-    usart.USART_BaudRate = 38400;          // speed 10byte/ms
+    usart.USART_BaudRate = 115200;          // speed 10byte/ms
     usart.USART_WordLength = USART_WordLength_8b;
     usart.USART_StopBits = USART_StopBits_1;
     usart.USART_Parity = USART_Parity_No;
@@ -53,8 +53,8 @@ void USART2_Config(void)
 
     nvic.NVIC_IRQChannel = USART2_IRQn;
     nvic.NVIC_IRQChannelPreemptionPriority = 1;
-    nvic.NVIC_IRQChannelSubPriority = 0;
-    nvic.NVIC_IRQChannelCmd = ENABLE; 
+    nvic.NVIC_IRQChannelSubPriority = 1;
+    nvic.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&nvic);
 
 	if(usart2_tx_fifo == NULL)
@@ -85,6 +85,13 @@ void USART2_PrintBlock(uint8_t* pdata, uint8_t len)
     USART_ITConfig(USART2, USART_IT_TXE, ENABLE);
 }
 
+int fputc(int ch, FILE *f)
+{
+    while (USART_GetFlagStatus(USART2,USART_FLAG_TC) == RESET);
+    USART_SendData(USART2, (uint8_t)ch);
+    return ch;
+}
+
 uint8_t usart2_rx_data;
 void USART2_IRQHandler(void)
 {  
@@ -104,6 +111,15 @@ void USART2_IRQHandler(void)
 	else if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)
     {
         usart2_rx_data = USART_ReceiveData(USART2);
+		if(usart2_rx_data == 0x10)
+		{
+			PWM1 = PWM2 = PWM3 = PWM4 = PWM5 = PWM6 = PWM7 = PWM8 = 100;
+		}
+		if(usart2_rx_data == 0x11)
+		{
+			PWM1 = PWM2 = PWM3 = PWM4 = PWM5 = PWM6 = PWM7 = PWM8 = 1500;
+		}
+		USART2_Print(usart2_rx_data);
     }       
 }
 

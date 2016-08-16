@@ -34,6 +34,6 @@ void ZGyro_RST(void)
     canTxMsg.Data[6] = 0x06;
     canTxMsg.Data[7] = 0x07;
 	
-	CAN_Transmit(CAN1,&canTxMsg);
+	CAN_Transmit(CAN2,&canTxMsg);
 }
 

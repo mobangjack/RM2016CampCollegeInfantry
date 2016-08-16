@@ -64,7 +64,7 @@ void CAN1_Config(void)
 	can.CAN_Prescaler = 3;   //CAN BaudRate 42/(1+9+4)/3=1Mbps
 	CAN_Init(CAN1, &can);
 
-	can_filter.CAN_FilterNumber=0;
+	can_filter.CAN_FilterNumber=14;
 	can_filter.CAN_FilterMode=CAN_FilterMode_IdMask;
 	can_filter.CAN_FilterScale=CAN_FilterScale_32bit;
 	can_filter.CAN_FilterIdHigh=0x0000;

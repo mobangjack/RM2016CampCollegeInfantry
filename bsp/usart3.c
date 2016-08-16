@@ -92,12 +92,14 @@ void USART3_PrintBlock(uint8_t* pdata, uint8_t len)
     USART_ITConfig(USART3, USART_IT_TXE, ENABLE);
 }
 
+/*
 int fputc(int ch, FILE *f)
 {
     while (USART_GetFlagStatus(USART3,USART_FLAG_TC) == RESET);
-    USART_SendData(USART2, (uint8_t)ch);
+    USART_SendData(USART3, (uint8_t)ch);
     return ch;
 }
+*/
 
 uint8_t usart3_rx_data;
 void USART3_IRQHandler(void)

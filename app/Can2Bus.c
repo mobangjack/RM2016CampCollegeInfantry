@@ -51,7 +51,12 @@ void Can2BusTask(void)
 		case MOTOR6_FEEDBACK_CAN_MSG_ID:
 		{
 			Encoder_Process(&GMPEncoder, value);
-		}break;				
+		}break;
+		case ZGYRO_FEEDBACK_CAN_MSG_ID:
+		{
+			ZGyroAngle = -0.01f*((int32_t)(can2RxMsg.Data[0]<<24)|(int32_t)(can2RxMsg.Data[1]<<16) | (int32_t)(can2RxMsg.Data[2]<<8) | (int32_t)(can2RxMsg.Data[3]));
+			
+		}break;		
 		default:
 		{
 		}break;

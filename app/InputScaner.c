@@ -154,7 +154,6 @@ void GetStickCtrlGimbalsCurrent(void)
 	gimbalsCurrent.pit = MAP(dbus.rc.ch3, CH_MIN, CH_MAX, -INPUT_GIMBALS_CURRENT_MAX, INPUT_GIMBALS_CURRENT_MAX);
 }
 
-
 void GetKeyboardCtrlChassisPosition(void)
 {
 	/**************************************/
@@ -210,7 +209,6 @@ void GetKeyboardCtrlChassisSpeed(void)
 	chassisSpeed.y = MAFilterF32_Calc(mafilter_y, speed_y);
 	chassisSpeed.z = MAFilterF32_Calc(mafilter_z, speed_z);
 }
-
 
 void GetKeyboardCtrlChassisCurrent(void)
 {

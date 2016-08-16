@@ -8,8 +8,10 @@ void WirelessTask(void)
 {
 	if(NRF24L01_Rx(nrf_rx_buf) == 0)
 	{
-		TX_Mode();
-		NRF24L01_Tx(nrf_rx_buf);
-		RX_Mode();
+		//TX_Mode();
+		//NRF24L01_Tx(nrf_rx_buf);
+		//RX_Mode();
+		//USART2_PrintBlock(nrf_rx_buf, RX_PLOAD_WIDTH);
+		LED_TOGGLE();
 	}
 }
