@@ -26,6 +26,7 @@
 .\objects\led.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\led.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\led.o: ..\alg\pid\pid.h
+.\objects\led.o: ..\alg\pwm\pwm.h
 .\objects\led.o: ..\alg\ramp\ramp.h
 .\objects\led.o: ..\alg\fifo\fifo.h
 .\objects\led.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,8 +43,8 @@
 .\objects\led.o: ..\bsp\encoder.h
 .\objects\led.o: ..\bsp\led.h
 .\objects\led.o: ..\bsp\motor.h
-.\objects\led.o: ..\bsp\pwm.h
 .\objects\led.o: ..\bsp\QuadEncoder.h
+.\objects\led.o: ..\bsp\spi1.h
 .\objects\led.o: ..\bsp\timer.h
 .\objects\led.o: ..\bsp\usart1.h
 .\objects\led.o: ..\bsp\usart2.h
@@ -53,11 +54,11 @@
 .\objects\led.o: ..\imu\mpu6050_driver.h
 .\objects\led.o: ..\imu\mpu6050_i2c.h
 .\objects\led.o: ..\imu\mpu6050_interrupt.h
-.\objects\led.o: ..\bsp\spi1.h
 .\objects\led.o: ..\nrf\NRF24L01.h
-.\objects\led.o: ..\app\Can1Task.h
-.\objects\led.o: ..\app\Can2Task.h
-.\objects\led.o: ..\app\InputTask.h
-.\objects\led.o: ..\app\ControlTask.h
-.\objects\led.o: ..\nrf\NRFTask.h
-.\objects\led.o: ..\app\OdomTask.h
+.\objects\led.o: ..\app\Can1Bus.h
+.\objects\led.o: ..\app\Can2Bus.h
+.\objects\led.o: ..\app\Controller.h
+.\objects\led.o: ..\app\InputScaner.h
+.\objects\led.o: ..\app\Odometry.h
+.\objects\led.o: ..\app\Servo.h
+.\objects\led.o: ..\app\Wireless.h

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
  
-#ifndef __CAN2_TASK_H__
-#define __CAN2_TASK_H__
+#ifndef __CAN2_BUS_H__
+#define __CAN2_BUS_H__
 
 #include "encoder.h"
 
-void Can2Task(void);
+void Can2BusTask(void);
 
 extern Encoder CM1Encoder;
 extern Encoder CM2Encoder;

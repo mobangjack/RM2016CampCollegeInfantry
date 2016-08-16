@@ -95,7 +95,7 @@ void CAN1_RX0_IRQHandler(void)
         CAN_ClearITPendingBit(CAN1, CAN_IT_FF0);
 		CAN_ClearFlag(CAN1, CAN_FLAG_FF0); 
 		CAN_Receive(CAN1, CAN_FIFO0, &can1RxMsg);
-		Can1Task();
+		Can1BusTask();
     }
 }
 

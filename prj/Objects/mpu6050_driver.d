@@ -26,6 +26,7 @@
 .\objects\mpu6050_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\mpu6050_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\mpu6050_driver.o: ..\alg\pid\pid.h
+.\objects\mpu6050_driver.o: ..\alg\pwm\pwm.h
 .\objects\mpu6050_driver.o: ..\alg\ramp\ramp.h
 .\objects\mpu6050_driver.o: ..\alg\fifo\fifo.h
 .\objects\mpu6050_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,8 +43,8 @@
 .\objects\mpu6050_driver.o: ..\bsp\encoder.h
 .\objects\mpu6050_driver.o: ..\bsp\led.h
 .\objects\mpu6050_driver.o: ..\bsp\motor.h
-.\objects\mpu6050_driver.o: ..\bsp\pwm.h
 .\objects\mpu6050_driver.o: ..\bsp\QuadEncoder.h
+.\objects\mpu6050_driver.o: ..\bsp\spi1.h
 .\objects\mpu6050_driver.o: ..\bsp\timer.h
 .\objects\mpu6050_driver.o: ..\bsp\usart1.h
 .\objects\mpu6050_driver.o: ..\bsp\usart2.h
@@ -53,11 +54,11 @@
 .\objects\mpu6050_driver.o: ..\imu\mpu6050_driver.h
 .\objects\mpu6050_driver.o: ..\imu\mpu6050_i2c.h
 .\objects\mpu6050_driver.o: ..\imu\mpu6050_interrupt.h
-.\objects\mpu6050_driver.o: ..\bsp\spi1.h
 .\objects\mpu6050_driver.o: ..\nrf\NRF24L01.h
-.\objects\mpu6050_driver.o: ..\app\Can1Task.h
-.\objects\mpu6050_driver.o: ..\app\Can2Task.h
-.\objects\mpu6050_driver.o: ..\app\InputTask.h
-.\objects\mpu6050_driver.o: ..\app\ControlTask.h
-.\objects\mpu6050_driver.o: ..\nrf\NRFTask.h
-.\objects\mpu6050_driver.o: ..\app\OdomTask.h
+.\objects\mpu6050_driver.o: ..\app\Can1Bus.h
+.\objects\mpu6050_driver.o: ..\app\Can2Bus.h
+.\objects\mpu6050_driver.o: ..\app\Controller.h
+.\objects\mpu6050_driver.o: ..\app\InputScaner.h
+.\objects\mpu6050_driver.o: ..\app\Odometry.h
+.\objects\mpu6050_driver.o: ..\app\Servo.h
+.\objects\mpu6050_driver.o: ..\app\Wireless.h

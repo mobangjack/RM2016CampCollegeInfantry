@@ -57,8 +57,11 @@ void TIM6_DAC_IRQHandler(void)
 //Timer Clock is 168MHz / 4 * 2 = 84M
 void TIM2_Config(void)
 {
-    TIM_TimeBaseInitTypeDef tim;
+    TIM_TimeBaseInitTypeDef  tim;
+	NVIC_InitTypeDef         nvic;
+	
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2,ENABLE);
+	
     tim.TIM_Period = 0xFFFFFFFF;
     tim.TIM_Prescaler = 84 - 1;	 //1M µÄÊ±ÖÓ  
     tim.TIM_ClockDivision = TIM_CKD_DIV1;	
@@ -66,6 +69,12 @@ void TIM2_Config(void)
     TIM_ARRPreloadConfig(TIM2, ENABLE);	
     TIM_TimeBaseInit(TIM2, &tim);
 
+	nvic.NVIC_IRQChannel = TIM2_IRQn;
+    nvic.NVIC_IRQChannelPreemptionPriority = 1;
+    nvic.NVIC_IRQChannelSubPriority = 1;
+    nvic.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&nvic);
+	
     TIM_Cmd(TIM2,ENABLE);	
 }
    
@@ -75,5 +84,6 @@ void TIM2_IRQHandler(void)
 	{
 		TIM_ClearITPendingBit(TIM2,TIM_IT_Update);
 		TIM_ClearFlag(TIM2, TIM_FLAG_Update);
+		ServoTask();
 	}
 }

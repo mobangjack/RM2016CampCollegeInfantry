@@ -26,6 +26,7 @@
 .\objects\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\delay.o: ..\alg\pid\pid.h
+.\objects\delay.o: ..\alg\pwm\pwm.h
 .\objects\delay.o: ..\alg\ramp\ramp.h
 .\objects\delay.o: ..\alg\fifo\fifo.h
 .\objects\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,8 +43,8 @@
 .\objects\delay.o: ..\bsp\encoder.h
 .\objects\delay.o: ..\bsp\led.h
 .\objects\delay.o: ..\bsp\motor.h
-.\objects\delay.o: ..\bsp\pwm.h
 .\objects\delay.o: ..\bsp\QuadEncoder.h
+.\objects\delay.o: ..\bsp\spi1.h
 .\objects\delay.o: ..\bsp\timer.h
 .\objects\delay.o: ..\bsp\usart1.h
 .\objects\delay.o: ..\bsp\usart2.h
@@ -53,11 +54,11 @@
 .\objects\delay.o: ..\imu\mpu6050_driver.h
 .\objects\delay.o: ..\imu\mpu6050_i2c.h
 .\objects\delay.o: ..\imu\mpu6050_interrupt.h
-.\objects\delay.o: ..\bsp\spi1.h
 .\objects\delay.o: ..\nrf\NRF24L01.h
-.\objects\delay.o: ..\app\Can1Task.h
-.\objects\delay.o: ..\app\Can2Task.h
-.\objects\delay.o: ..\app\InputTask.h
-.\objects\delay.o: ..\app\ControlTask.h
-.\objects\delay.o: ..\nrf\NRFTask.h
-.\objects\delay.o: ..\app\OdomTask.h
+.\objects\delay.o: ..\app\Can1Bus.h
+.\objects\delay.o: ..\app\Can2Bus.h
+.\objects\delay.o: ..\app\Controller.h
+.\objects\delay.o: ..\app\InputScaner.h
+.\objects\delay.o: ..\app\Odometry.h
+.\objects\delay.o: ..\app\Servo.h
+.\objects\delay.o: ..\app\Wireless.h

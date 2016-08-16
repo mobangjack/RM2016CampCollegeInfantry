@@ -14,8 +14,8 @@
  * limitations under the License.
  */
  
-#ifndef __CONTROL_TASK_H__
-#define __CONTROL_TASK_H__
+#ifndef __CONTROLLER_H__
+#define __CONTROLLER_H__
 
 #include <stdint.h>
 #include "mecanum.h"

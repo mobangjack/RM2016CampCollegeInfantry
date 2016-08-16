@@ -26,6 +26,7 @@
 .\objects\quadencoder.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\quadencoder.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\quadencoder.o: ..\alg\pid\pid.h
+.\objects\quadencoder.o: ..\alg\pwm\pwm.h
 .\objects\quadencoder.o: ..\alg\ramp\ramp.h
 .\objects\quadencoder.o: ..\alg\fifo\fifo.h
 .\objects\quadencoder.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,8 +43,8 @@
 .\objects\quadencoder.o: ..\bsp\encoder.h
 .\objects\quadencoder.o: ..\bsp\led.h
 .\objects\quadencoder.o: ..\bsp\motor.h
-.\objects\quadencoder.o: ..\bsp\pwm.h
 .\objects\quadencoder.o: ..\bsp\QuadEncoder.h
+.\objects\quadencoder.o: ..\bsp\spi1.h
 .\objects\quadencoder.o: ..\bsp\timer.h
 .\objects\quadencoder.o: ..\bsp\usart1.h
 .\objects\quadencoder.o: ..\bsp\usart2.h
@@ -53,11 +54,11 @@
 .\objects\quadencoder.o: ..\imu\mpu6050_driver.h
 .\objects\quadencoder.o: ..\imu\mpu6050_i2c.h
 .\objects\quadencoder.o: ..\imu\mpu6050_interrupt.h
-.\objects\quadencoder.o: ..\bsp\spi1.h
 .\objects\quadencoder.o: ..\nrf\NRF24L01.h
-.\objects\quadencoder.o: ..\app\Can1Task.h
-.\objects\quadencoder.o: ..\app\Can2Task.h
-.\objects\quadencoder.o: ..\app\InputTask.h
-.\objects\quadencoder.o: ..\app\ControlTask.h
-.\objects\quadencoder.o: ..\nrf\NRFTask.h
-.\objects\quadencoder.o: ..\app\OdomTask.h
+.\objects\quadencoder.o: ..\app\Can1Bus.h
+.\objects\quadencoder.o: ..\app\Can2Bus.h
+.\objects\quadencoder.o: ..\app\Controller.h
+.\objects\quadencoder.o: ..\app\InputScaner.h
+.\objects\quadencoder.o: ..\app\Odometry.h
+.\objects\quadencoder.o: ..\app\Servo.h
+.\objects\quadencoder.o: ..\app\Wireless.h

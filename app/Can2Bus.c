@@ -23,7 +23,7 @@ Encoder CM4Encoder = {0};
 Encoder GMYEncoder = {0};
 Encoder GMPEncoder = {0};
 
-void Can2Task(void)
+void Can2BusTask(void)
 {   
 	uint16_t value = (can2RxMsg.Data[0]<<8) | can2RxMsg.Data[1];
 	switch(can2RxMsg.StdId)

@@ -43,7 +43,7 @@ int main(void)
 	RX_Mode();
 	while(1)
 	{
-		NRFTask();
+		WirelessTask();
 		//IMU_getYawPitchRoll(angle);
 		if(Micros() % 10000 == 0)
 		{

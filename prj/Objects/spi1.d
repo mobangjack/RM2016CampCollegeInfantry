@@ -26,6 +26,7 @@
 .\objects\spi1.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\spi1.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\spi1.o: ..\alg\pid\pid.h
+.\objects\spi1.o: ..\alg\pwm\pwm.h
 .\objects\spi1.o: ..\alg\ramp\ramp.h
 .\objects\spi1.o: ..\alg\fifo\fifo.h
 .\objects\spi1.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,8 +43,8 @@
 .\objects\spi1.o: ..\bsp\encoder.h
 .\objects\spi1.o: ..\bsp\led.h
 .\objects\spi1.o: ..\bsp\motor.h
-.\objects\spi1.o: ..\bsp\pwm.h
 .\objects\spi1.o: ..\bsp\QuadEncoder.h
+.\objects\spi1.o: ..\bsp\spi1.h
 .\objects\spi1.o: ..\bsp\timer.h
 .\objects\spi1.o: ..\bsp\usart1.h
 .\objects\spi1.o: ..\bsp\usart2.h
@@ -53,11 +54,11 @@
 .\objects\spi1.o: ..\imu\mpu6050_driver.h
 .\objects\spi1.o: ..\imu\mpu6050_i2c.h
 .\objects\spi1.o: ..\imu\mpu6050_interrupt.h
-.\objects\spi1.o: ..\bsp\spi1.h
 .\objects\spi1.o: ..\nrf\NRF24L01.h
-.\objects\spi1.o: ..\app\Can1Task.h
-.\objects\spi1.o: ..\app\Can2Task.h
-.\objects\spi1.o: ..\app\InputTask.h
-.\objects\spi1.o: ..\app\ControlTask.h
-.\objects\spi1.o: ..\nrf\NRFTask.h
-.\objects\spi1.o: ..\app\OdomTask.h
+.\objects\spi1.o: ..\app\Can1Bus.h
+.\objects\spi1.o: ..\app\Can2Bus.h
+.\objects\spi1.o: ..\app\Controller.h
+.\objects\spi1.o: ..\app\InputScaner.h
+.\objects\spi1.o: ..\app\Odometry.h
+.\objects\spi1.o: ..\app\Servo.h
+.\objects\spi1.o: ..\app\Wireless.h

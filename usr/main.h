@@ -26,6 +26,7 @@
 
 //alg
 #include "pid.h"
+#include "pwm.h"
 #include "ramp.h"
 #include "fifo.h"
 #include "crc16.h"
@@ -33,7 +34,6 @@
 #include "sprotocol.h"
 #include "mafilter_i16.h"
 #include "mafilter_f32.h"
-
 
 //bsp
 #include "bsp.h"
@@ -44,8 +44,8 @@
 #include "encoder.h"
 #include "led.h"
 #include "motor.h"
-#include "pwm.h"
 #include "QuadEncoder.h"
+#include "spi1.h"
 #include "timer.h"
 #include "usart1.h"
 #include "usart2.h"
@@ -59,16 +59,16 @@
 #include "mpu6050_interrupt.h"
 
 //nrf
-#include "spi1.h"
 #include "NRF24L01.h"
 
 //app
-#include "Can1Task.h"
-#include "Can2Task.h"
-#include "InputTask.h"
-#include "ControlTask.h"
-#include "NRFTask.h"
-#include "OdomTask.h"
+#include "Can1Bus.h"
+#include "Can2Bus.h"
+#include "Controller.h"
+#include "InputScaner.h"
+#include "Odometry.h"
+#include "Servo.h"
+#include "Wireless.h"
 
 //common definition
 #define PI 3.1415926f

@@ -14,21 +14,32 @@
  * limitations under the License.
  */
  
-#include "main.h"
+#ifndef __ODOMETRY_H__
+#define __ODOMETRY_H__
 
-float ZGyroAngle = 0;
+#include <stdint.h>
+#include <string.h>
+#include "crc16.h"
+	
+#define ODOM_HEADER 0xabcd  
+#define ODOM_INIT_CRC16 0xdcba
+#define ODOM_SIZE 16
 
-void Can1Task(void)
-{      
-	switch(can1RxMsg.StdId)
-	{
-		case ZGYRO_FEEDBACK_CAN_MSG_ID:
-		{
-			ZGyroAngle = -0.01f*((int32_t)(can1RxMsg.Data[0]<<24)|(int32_t)(can1RxMsg.Data[1]<<16) | (int32_t)(can1RxMsg.Data[2]<<8) | (int32_t)(can1RxMsg.Data[3])); 
-		}break;
-		default:
-		{
-		}
-	}
-}
+#pragma pack(1)
+typedef struct
+{
+	uint16_t header : 16;
+	int16_t px : 16;
+	int16_t py : 16;
+	int16_t pz : 16;
+	int16_t vx : 16;
+	int16_t vy : 16;
+	int16_t vz : 16;
+	uint16_t check_sum : 16;
+}Odom;
 
+void OdomTask(void);
+
+extern Odom odom;
+
+#endif

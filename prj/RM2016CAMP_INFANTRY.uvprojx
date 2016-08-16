@@ -373,7 +373,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\app;..\bsp;..\dep;..\imu;..\lib;..\nrf;..\usr;..\alg\crc;..\alg\fifo;..\alg\mafilter;..\alg\pid;..\alg\ramp;..\alg\mecanum;..\alg\sprotocol</IncludePath>
+              <IncludePath>..\app;..\bsp;..\dep;..\imu;..\lib;..\nrf;..\usr;..\alg\crc;..\alg\fifo;..\alg\mafilter;..\alg\pid;..\alg\pwm;..\alg\ramp;..\alg\mecanum;..\alg\sprotocol</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -476,35 +476,50 @@
               <FileType>1</FileType>
               <FilePath>..\alg\sprotocol\sprotocol.c</FilePath>
             </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\alg\pwm\pwm.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>app</GroupName>
           <Files>
             <File>
-              <FileName>Can1Task.c</FileName>
+              <FileName>Can1Bus.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\app\Can1Task.c</FilePath>
+              <FilePath>..\app\Can1Bus.c</FilePath>
             </File>
             <File>
-              <FileName>Can2Task.c</FileName>
+              <FileName>Can2Bus.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\app\Can2Task.c</FilePath>
+              <FilePath>..\app\Can2Bus.c</FilePath>
             </File>
             <File>
-              <FileName>InputTask.c</FileName>
+              <FileName>Controller.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\app\InputTask.c</FilePath>
+              <FilePath>..\app\Controller.c</FilePath>
             </File>
             <File>
-              <FileName>ControlTask.c</FileName>
+              <FileName>InputScaner.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\app\ControlTask.c</FilePath>
+              <FilePath>..\app\InputScaner.c</FilePath>
             </File>
             <File>
-              <FileName>OdomTask.c</FileName>
+              <FileName>Odometry.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\app\OdomTask.c</FilePath>
+              <FilePath>..\app\Odometry.c</FilePath>
+            </File>
+            <File>
+              <FileName>Servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\Servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>Wireless.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\Wireless.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -550,11 +565,6 @@
               <FileName>motor.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\motor.c</FilePath>
-            </File>
-            <File>
-              <FileName>pwm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\bsp\pwm.c</FilePath>
             </File>
             <File>
               <FileName>QuadEncoder.c</FileName>
@@ -700,11 +710,6 @@
               <FileName>NRF24L01.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\nrf\NRF24L01.c</FilePath>
-            </File>
-            <File>
-              <FileName>NRFTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\nrf\NRFTask.c</FilePath>
             </File>
           </Files>
         </Group>

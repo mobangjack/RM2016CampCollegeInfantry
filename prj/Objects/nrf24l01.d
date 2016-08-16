@@ -26,6 +26,7 @@
 .\objects\nrf24l01.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\nrf24l01.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\nrf24l01.o: ..\alg\pid\pid.h
+.\objects\nrf24l01.o: ..\alg\pwm\pwm.h
 .\objects\nrf24l01.o: ..\alg\ramp\ramp.h
 .\objects\nrf24l01.o: ..\alg\fifo\fifo.h
 .\objects\nrf24l01.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,8 +43,8 @@
 .\objects\nrf24l01.o: ..\bsp\encoder.h
 .\objects\nrf24l01.o: ..\bsp\led.h
 .\objects\nrf24l01.o: ..\bsp\motor.h
-.\objects\nrf24l01.o: ..\bsp\pwm.h
 .\objects\nrf24l01.o: ..\bsp\QuadEncoder.h
+.\objects\nrf24l01.o: ..\bsp\spi1.h
 .\objects\nrf24l01.o: ..\bsp\timer.h
 .\objects\nrf24l01.o: ..\bsp\usart1.h
 .\objects\nrf24l01.o: ..\bsp\usart2.h
@@ -53,11 +54,11 @@
 .\objects\nrf24l01.o: ..\imu\mpu6050_driver.h
 .\objects\nrf24l01.o: ..\imu\mpu6050_i2c.h
 .\objects\nrf24l01.o: ..\imu\mpu6050_interrupt.h
-.\objects\nrf24l01.o: ..\bsp\spi1.h
 .\objects\nrf24l01.o: ..\nrf\NRF24L01.h
-.\objects\nrf24l01.o: ..\app\Can1Task.h
-.\objects\nrf24l01.o: ..\app\Can2Task.h
-.\objects\nrf24l01.o: ..\app\InputTask.h
-.\objects\nrf24l01.o: ..\app\ControlTask.h
-.\objects\nrf24l01.o: ..\nrf\NRFTask.h
-.\objects\nrf24l01.o: ..\app\OdomTask.h
+.\objects\nrf24l01.o: ..\app\Can1Bus.h
+.\objects\nrf24l01.o: ..\app\Can2Bus.h
+.\objects\nrf24l01.o: ..\app\Controller.h
+.\objects\nrf24l01.o: ..\app\InputScaner.h
+.\objects\nrf24l01.o: ..\app\Odometry.h
+.\objects\nrf24l01.o: ..\app\Servo.h
+.\objects\nrf24l01.o: ..\app\Wireless.h

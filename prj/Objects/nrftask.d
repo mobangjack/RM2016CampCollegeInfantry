@@ -1,4 +1,4 @@
-.\objects\nrftask.o: ..\nrf\NRFTask.c
+.\objects\nrftask.o: ..\app\NRFTask.c
 .\objects\nrftask.o: ..\usr\main.h
 .\objects\nrftask.o: ..\lib\stm32f4xx.h
 .\objects\nrftask.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm4.h
@@ -26,6 +26,7 @@
 .\objects\nrftask.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\nrftask.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\nrftask.o: ..\alg\pid\pid.h
+.\objects\nrftask.o: ..\alg\pwm\pwm.h
 .\objects\nrftask.o: ..\alg\ramp\ramp.h
 .\objects\nrftask.o: ..\alg\fifo\fifo.h
 .\objects\nrftask.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,7 +43,6 @@
 .\objects\nrftask.o: ..\bsp\encoder.h
 .\objects\nrftask.o: ..\bsp\led.h
 .\objects\nrftask.o: ..\bsp\motor.h
-.\objects\nrftask.o: ..\bsp\pwm.h
 .\objects\nrftask.o: ..\bsp\QuadEncoder.h
 .\objects\nrftask.o: ..\bsp\timer.h
 .\objects\nrftask.o: ..\bsp\usart1.h
@@ -55,9 +55,10 @@
 .\objects\nrftask.o: ..\imu\mpu6050_interrupt.h
 .\objects\nrftask.o: ..\bsp\spi1.h
 .\objects\nrftask.o: ..\nrf\NRF24L01.h
+.\objects\nrftask.o: ..\app\NRFTask.h
 .\objects\nrftask.o: ..\app\Can1Task.h
 .\objects\nrftask.o: ..\app\Can2Task.h
-.\objects\nrftask.o: ..\app\InputTask.h
-.\objects\nrftask.o: ..\app\ControlTask.h
-.\objects\nrftask.o: ..\nrf\NRFTask.h
 .\objects\nrftask.o: ..\app\OdomTask.h
+.\objects\nrftask.o: ..\app\InputTask.h
+.\objects\nrftask.o: ..\app\ServoTask.h
+.\objects\nrftask.o: ..\app\ControlTask.h

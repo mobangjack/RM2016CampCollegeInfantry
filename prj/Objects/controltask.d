@@ -26,6 +26,7 @@
 .\objects\controltask.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\controltask.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\controltask.o: ..\alg\pid\pid.h
+.\objects\controltask.o: ..\alg\pwm\pwm.h
 .\objects\controltask.o: ..\alg\ramp\ramp.h
 .\objects\controltask.o: ..\alg\fifo\fifo.h
 .\objects\controltask.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,7 +43,6 @@
 .\objects\controltask.o: ..\bsp\encoder.h
 .\objects\controltask.o: ..\bsp\led.h
 .\objects\controltask.o: ..\bsp\motor.h
-.\objects\controltask.o: ..\bsp\pwm.h
 .\objects\controltask.o: ..\bsp\QuadEncoder.h
 .\objects\controltask.o: ..\bsp\timer.h
 .\objects\controltask.o: ..\bsp\usart1.h
@@ -55,9 +55,10 @@
 .\objects\controltask.o: ..\imu\mpu6050_interrupt.h
 .\objects\controltask.o: ..\bsp\spi1.h
 .\objects\controltask.o: ..\nrf\NRF24L01.h
+.\objects\controltask.o: ..\app\NRFTask.h
 .\objects\controltask.o: ..\app\Can1Task.h
 .\objects\controltask.o: ..\app\Can2Task.h
-.\objects\controltask.o: ..\app\InputTask.h
-.\objects\controltask.o: ..\app\ControlTask.h
-.\objects\controltask.o: ..\nrf\NRFTask.h
 .\objects\controltask.o: ..\app\OdomTask.h
+.\objects\controltask.o: ..\app\InputTask.h
+.\objects\controltask.o: ..\app\ServoTask.h
+.\objects\controltask.o: ..\app\ControlTask.h

@@ -26,6 +26,7 @@
 .\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\main.o: ..\alg\pid\pid.h
+.\objects\main.o: ..\alg\pwm\pwm.h
 .\objects\main.o: ..\alg\ramp\ramp.h
 .\objects\main.o: ..\alg\fifo\fifo.h
 .\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,8 +43,8 @@
 .\objects\main.o: ..\bsp\encoder.h
 .\objects\main.o: ..\bsp\led.h
 .\objects\main.o: ..\bsp\motor.h
-.\objects\main.o: ..\bsp\pwm.h
 .\objects\main.o: ..\bsp\QuadEncoder.h
+.\objects\main.o: ..\bsp\spi1.h
 .\objects\main.o: ..\bsp\timer.h
 .\objects\main.o: ..\bsp\usart1.h
 .\objects\main.o: ..\bsp\usart2.h
@@ -53,11 +54,11 @@
 .\objects\main.o: ..\imu\mpu6050_driver.h
 .\objects\main.o: ..\imu\mpu6050_i2c.h
 .\objects\main.o: ..\imu\mpu6050_interrupt.h
-.\objects\main.o: ..\bsp\spi1.h
 .\objects\main.o: ..\nrf\NRF24L01.h
-.\objects\main.o: ..\app\Can1Task.h
-.\objects\main.o: ..\app\Can2Task.h
-.\objects\main.o: ..\app\InputTask.h
-.\objects\main.o: ..\app\ControlTask.h
-.\objects\main.o: ..\nrf\NRFTask.h
-.\objects\main.o: ..\app\OdomTask.h
+.\objects\main.o: ..\app\Can1Bus.h
+.\objects\main.o: ..\app\Can2Bus.h
+.\objects\main.o: ..\app\Controller.h
+.\objects\main.o: ..\app\InputScaner.h
+.\objects\main.o: ..\app\Odometry.h
+.\objects\main.o: ..\app\Servo.h
+.\objects\main.o: ..\app\Wireless.h

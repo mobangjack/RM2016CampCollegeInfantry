@@ -26,6 +26,7 @@
 .\objects\can2.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\can2.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\can2.o: ..\alg\pid\pid.h
+.\objects\can2.o: ..\alg\pwm\pwm.h
 .\objects\can2.o: ..\alg\ramp\ramp.h
 .\objects\can2.o: ..\alg\fifo\fifo.h
 .\objects\can2.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
@@ -42,8 +43,8 @@
 .\objects\can2.o: ..\bsp\encoder.h
 .\objects\can2.o: ..\bsp\led.h
 .\objects\can2.o: ..\bsp\motor.h
-.\objects\can2.o: ..\bsp\pwm.h
 .\objects\can2.o: ..\bsp\QuadEncoder.h
+.\objects\can2.o: ..\bsp\spi1.h
 .\objects\can2.o: ..\bsp\timer.h
 .\objects\can2.o: ..\bsp\usart1.h
 .\objects\can2.o: ..\bsp\usart2.h
@@ -53,11 +54,11 @@
 .\objects\can2.o: ..\imu\mpu6050_driver.h
 .\objects\can2.o: ..\imu\mpu6050_i2c.h
 .\objects\can2.o: ..\imu\mpu6050_interrupt.h
-.\objects\can2.o: ..\bsp\spi1.h
 .\objects\can2.o: ..\nrf\NRF24L01.h
-.\objects\can2.o: ..\app\Can1Task.h
-.\objects\can2.o: ..\app\Can2Task.h
-.\objects\can2.o: ..\app\InputTask.h
-.\objects\can2.o: ..\app\ControlTask.h
-.\objects\can2.o: ..\nrf\NRFTask.h
-.\objects\can2.o: ..\app\OdomTask.h
+.\objects\can2.o: ..\app\Can1Bus.h
+.\objects\can2.o: ..\app\Can2Bus.h
+.\objects\can2.o: ..\app\Controller.h
+.\objects\can2.o: ..\app\InputScaner.h
+.\objects\can2.o: ..\app\Odometry.h
+.\objects\can2.o: ..\app\Servo.h
+.\objects\can2.o: ..\app\Wireless.h
